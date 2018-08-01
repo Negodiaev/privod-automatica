@@ -54,11 +54,11 @@
 @include motion-ui-animations;
 
 // vendor styles
-@import "vendor/aos";
-@import "vendor/slick-carousel";
+@import 'vendor/aos';
+@import 'vendor/slick-carousel';
 @import 'vendor/swiper';
 @import 'vendor/wa-mediabox';
-@import "vendor/index-menu";
+@import 'vendor/index-menu';
 
 // mixins
 @import 'mixins/container-border';
@@ -71,12 +71,16 @@
 @import 'mixins/zindex';
 
 // global styles
-@import 'global/app-dashboard';
-@import 'global/fonts';
+// @import 'global/app-dashboard';
+// @import 'global/fonts';
 @import 'global/base';
 @import 'global/layout';
+@import 'global/typography';
 
 // custom components
-@import 'components/navigation/main-nav';
+@import 'components/navigation';
 
 @import 'components/footer';
+
+// media queries
+@import 'global/responsive';

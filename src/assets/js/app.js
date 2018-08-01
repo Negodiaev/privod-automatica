@@ -100,3 +100,14 @@ $('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
     .toggleClass('shrink-medium')
     .toggleClass('shrink-large');
 });
+
+document.addEventListener('DOMContentLoaded', function(event) {
+  // Services menu toggle
+  $('.services-menu-toggle').on('click', function(e) {
+    e.preventDefault();
+
+    $(this)
+      .closest('.services-menu')
+      .toggleClass('shown');
+  });
+});

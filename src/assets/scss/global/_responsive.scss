@@ -1,0 +1,47 @@
+@include breakpoint(small only) {
+  // Home page
+}
+
+@include breakpoint(medium down) {
+  // Home page
+  .services-menu {
+    ul {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in, max-height 0.5s ease-in;
+    }
+    &.shown {
+      ul {
+        overflow: auto;
+        max-height: 400px;
+        opacity: 1;
+        transition: opacity 0.5s ease-out, max-height 0.5s ease-out;
+      }
+    }
+  }
+}
+
+@include breakpoint(medium) {
+  // Home page
+}
+
+@include breakpoint(large) {
+  // Home page
+}
+
+@include breakpoint(1200px) {
+  // Home page
+}
+
+@include breakpoint(1280px) {
+  // Home page
+}
+
+@include breakpoint(xlarge) {
+  // Home page
+}
+
+@include breakpoint(xxlarge) {
+  // Home page
+}

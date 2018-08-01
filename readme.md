@@ -1,11 +1,9 @@
-# The Plate project
+# The Privod Automatica project | Привод автоматика
 
-## Pages list
+## Pages list | Список страниц
 
-- [Home page](https://negodiaev.github.io/privod-automatica/)
-- [Catalog](https://negodiaev.github.io/privod-automatica/catalog.html)
-
-
+- [Home page | Главная](https://negodiaev.github.io/privod-automatica/)
+- [Catalog | Каталог](https://negodiaev.github.io/privod-automatica/catalog.html)
 
 ---
 
