@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
-@import 'settings';
+// @import 'settings';
+@import 'variables';
 @import 'foundation';
 @import 'motion-ui';
 
@@ -55,6 +56,8 @@
 // vendor styles
 @import "vendor/aos";
 @import "vendor/slick-carousel";
+@import 'vendor/swiper';
+@import 'vendor/wa-mediabox';
 @import "vendor/index-menu";
 
 // mixins
@@ -69,6 +72,8 @@
 
 // global styles
 @import 'global/app-dashboard';
+@import 'global/fonts';
+@import 'global/base';
 @import 'global/layout';
 
 // custom components

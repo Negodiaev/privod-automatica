@@ -1,4 +1,15 @@
-# ZURB WebApp Template
+# The Plate project
+
+## Pages list
+
+- [Home page](https://negodiaev.github.io/privod-automatica/)
+- [Catalog](https://negodiaev.github.io/privod-automatica/catalog.html)
+
+
+
+---
+
+## ZURB WebApp Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
