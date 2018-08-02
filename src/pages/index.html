@@ -31,7 +31,7 @@ meta-title: Главная
       </div>
     </div>
     <!-- /.search -->
-    <div class="callback show-for-medium">
+    <div class="callback">
       <div class="callback-title">Адрес компании</div>
       <div class="callback-info">г. Пермь, ул. Ижевская, 25
         <br>ПН-ПТ с 6:30 до 15:30 МСК</div>
@@ -42,143 +42,18 @@ meta-title: Главная
   <!-- /.off-canvas -->
   <div class="off-canvas-content" data-off-canvas-content>
     <div class="sticky-footer">
-      <header class="head">
-        <div class="head-row top show-for-medium">
-          <div class="grid-container">
-            <div class="navigation-wrap flex-container align-right">
-              <nav class="navigation">
-                <ul class="main-menu menu simple">
-                  <li>
-                    <a href="#">О компании</a>
-                  </li>
-                  <li>
-                    <a href="#">Клиенты</a>
-                  </li>
-                  <li>
-                    <a href="#">Информация</a>
-                  </li>
-                  <li>
-                    <a href="#">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <!-- /.navigation -->
-              <div class="search input-group">
-                <input type="text" class="input-group-field">
-                <div class="input-group-button">
-                  <button class="button" type="submit">
-                    <svg class="icon" width="14" height="14">
-                      <use xlink:href="#magnifier"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <!-- /.search -->
-            </div>
-            <!-- /.navigation-wrap -->
-          </div>
-          <!-- /.grid-container -->
-        </div>
-        <!-- /.head-row -->
-        <div class="head-row">
-          <div class="grid-container">
-            <div class="grid-x grid-padding-x">
-              <div class="cell small-2 hide-for-medium">
-                <button type="button" class="burger hide-for-medium" data-open="offCanvas" aria-expanded="false" aria-controls="offCanvas">
-                  <i></i>
-                  <i></i>
-                  <i></i>
-                </button>
-              </div>
-              <!-- /.cell -->
-              <div class="cell small-8 medium-4">
-                <div class="logo">
-                  <div class="logo-picture logo-cell">
-                    <img src="assets/img/logo.png" alt="">
-                  </div>
-                  <div class="logo-info logo-cell">
-                    <div class="logo-title">Привод Автоматика</div>
-                    <div class="logo-description show-for-medium">Комплексные системы решений автоматизации технологических процессов</div>
-                  </div>
-                </div>
-                <!-- /.logo -->
-              </div>
-              <!-- /.cell -->
-              <div class="cell show-for-medium medium-4">
-                <div class="callback show-for-medium">
-                  <div class="callback-title">Адрес компании</div>
-                  <div class="callback-info">г. Пермь, ул. Ижевская, 25
-                    <br>ПН-ПТ с 6:30 до 15:30 МСК</div>
-                  <a href="#" class="callback-link">Отправить заявку</a>
-                </div>
-                <!-- /.callback -->
-              </div>
-              <!-- /.cell -->
-              <div class="cell small-2 medium-4">
-                <div class="callback">
-                  <div class="callback-title show-for-medium">Бесплатный звонок по России</div>
-                  <div>
-                    <a href="tel:+78002504890" class="callback-phone">
-                      <svg class="icon hide-for-medium" width="24" height="24">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                      <span class="callback-phone-text show-for-medium">8&nbsp;800&nbsp;250&nbsp;4890</span>
-                    </a>
-                  </div>
-                  <a href="#" class="callback-link show-for-medium">Заказать обратный звонок</a>
-                </div>
-                <!-- /.callback -->
-              </div>
-              <!-- /.cell -->
-            </div>
-            <!-- /.grid-x -->
-          </div>
-          <!-- /.grid-container -->
-        </div>
-        <!-- /.head-row -->
-        <div class="head-row bottom">
-          <div class="grid-container">
-            <div class="services-menu">
-              <button type="button" class="services-menu-toggle button hide-for-large">Список услуг</button>
-              <ul>
-                <li>
-                  <a href="#">Ремонт электроники</a>
-                </li>
-                <li>
-                  <a href="#">Модернизация станков</a>
-                </li>
-                <li>
-                  <a href="#">Обследование электропривода</a>
-                </li>
-                <li>
-                  <a href="#">Сервисное обслуживание</a>
-                </li>
-                <li>
-                  <a href="#">Производство АДЧР</a>
-                </li>
-                <li>
-                  <a href="#">Каталог оборудования</a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.services-menu -->
-          </div>
-          <!-- /.grid-container -->
-        </div>
-        <!-- /.head-row -->
-      </header>
-      <!-- /.head -->
+      {{> header}}
       <main class="main">
-        MAin
-        <svg class="icon" width="14" height="14">
-          <use xlink:href="#magnifier"></use>
-        </svg>
+        {{> hero}}
+        {{> services}}
+        {{> advantages}}
+        {{> partners}}
+        {{> production}}
+        {{> goods}}
+        {{> text-block}}
       </main>
       <!-- /.main -->
-      <footer class="footer">
-        Footer
-      </footer>
-      <!-- /.footer -->
+      {{> footer}}
     </div>
     <!-- /.sticky-footer -->
   </div>

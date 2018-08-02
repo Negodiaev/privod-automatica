@@ -102,12 +102,25 @@ $('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function(event) {
-  // Services menu toggle
+  // services menu toggle
   $('.services-menu-toggle').on('click', function(e) {
     e.preventDefault();
 
     $(this)
       .closest('.services-menu')
       .toggleClass('shown');
+  });
+
+  // hero slider
+  var heroSwiper = new Swiper('#hero-slider', {
+    loop: true,
+    autoHeight: true,
+    pagination: {
+      el: '#hero-slider-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      1023: {}
+    }
   });
 });
