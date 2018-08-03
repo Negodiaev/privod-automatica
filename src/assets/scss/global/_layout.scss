@@ -22,3 +22,37 @@ body {
     flex: 1 0 auto;
   }
 }
+
+.side {
+  .main-menu {
+    li {
+      & + li {
+        a {
+          border-top: 1px solid $body-font-color;
+        }
+      }
+    }
+    a {
+      display: block;
+      border-bottom: 0;
+      &:focus {
+        color: inherit;
+      }
+    }
+  }
+  .search-form,
+  .callback-address {
+    margin: rem-calc(0 10);
+  }
+  .search-form {
+    margin-bottom: rem-calc(30);
+  }
+  .search-form-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding-left: rem-calc(10);
+    height: 100%;
+    transform: translateY(-50%);
+  }
+}

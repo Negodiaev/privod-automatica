@@ -102,6 +102,15 @@ $('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function(event) {
+  // search menu toggle
+  $('.search-form-toggle').on('click', function(e) {
+    e.preventDefault();
+
+    var searchForm = $(this).closest('.search-form');
+
+    if (searchForm) searchForm.toggleClass('shown').focus();
+  });
+
   // services menu toggle
   $('.services-menu-toggle').on('click', function(e) {
     e.preventDefault();

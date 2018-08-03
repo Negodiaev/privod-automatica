@@ -4,7 +4,7 @@ meta-title: Главная
 ---
 
 <div class="off-canvas-wrapper">
-  <div id="offCanvas" class="side off-canvas position-left" data-off-canvas>
+  <div id="offCanvas" class="side off-canvas position-left text-center" data-off-canvas>
     <ul class="main-menu vertical menu">
       <li>
         <a href="#">О компании</a>
@@ -20,37 +20,29 @@ meta-title: Главная
       </li>
     </ul>
     <!-- /.main-menu -->
-    <div class="search input-group">
-      <input type="text" class="input-group-field">
-      <div class="input-group-button">
-        <button class="button" type="submit">
-          <svg class="icon" width="14" height="14">
-            <use xlink:href="#magnifier"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <!-- /.search -->
-    <div class="callback">
+    <form class="search-form">
+      <input type="text">
+      <button class="search-form-toggle button" type="button">
+        <svg class="icon" width="14" height="14">
+          <use xlink:href="#magnifier"></use>
+        </svg>
+      </button>
+    </form>
+    <!-- /.search-form -->
+    <div class="callback-address callback">
       <div class="callback-title">Адрес компании</div>
       <div class="callback-info">г. Пермь, ул. Ижевская, 25
         <br>ПН-ПТ с 6:30 до 15:30 МСК</div>
       <a href="#" class="callback-link">Отправить заявку</a>
     </div>
-    <!-- /.callback -->
+    <!-- /.callback-address -->
   </div>
   <!-- /.off-canvas -->
   <div class="off-canvas-content" data-off-canvas-content>
     <div class="sticky-footer">
       {{> header}}
       <main class="main">
-        {{> hero}}
-        {{> services}}
-        {{> advantages}}
-        {{> partners}}
-        {{> production}}
-        {{> goods}}
-        {{> text-block}}
+        {{> hero}} {{> services}} {{> advantages}} {{> partners}} {{> production}} {{> goods}} {{> text-block}}
       </main>
       <!-- /.main -->
       {{> footer}}

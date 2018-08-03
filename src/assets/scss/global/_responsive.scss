@@ -1,22 +1,58 @@
 @include breakpoint(small only) {
   // Home page
+  .logo {
+    margin: rem-calc(0 -10);
+  }
+  .services-menu {
+    &.shown {
+      .menu {
+        max-height: 800px;
+      }
+    }
+  }
 }
 
 @include breakpoint(medium down) {
   // Home page
+  .logo-picture {
+    max-width: rem-calc(40);
+  }
   .services-menu {
-    ul {
+    .menu {
       overflow: hidden;
       max-height: 0;
       opacity: 0;
-      transition: opacity 0.5s ease-in, max-height 0.5s ease-in;
+      transition: padding 0.4s ease-in, opacity 0.4s ease-in, max-height 0.4s ease-in;
+      li {
+        opacity: 0;
+        transition: opacity 0.4s ease-in 0.2s;
+      }
     }
     &.shown {
-      ul {
+      .menu {
         overflow: auto;
-        max-height: 400px;
         opacity: 1;
-        transition: opacity 0.5s ease-out, max-height 0.5s ease-out;
+        transition: opacity 0.6s ease-out, max-height 0.6s ease-out, padding 0.1s;
+        li {
+          opacity: 1;
+          transition: opacity 0.3s ease-out 0.1s;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(medium only) {
+  // Home page
+  .services-menu {
+    .menu {
+      li {
+        flex-basis: 50%;
+      }
+    }
+    &.shown {
+      .menu {
+        max-height: 400px;
       }
     }
   }
@@ -26,12 +62,82 @@
   // Home page
 }
 
+@include breakpoint(large down) {
+  //Home page
+}
+
+@include breakpoint(large only) {
+  // Home page
+  .services-menu {
+    .menu {
+      li {
+        flex-basis: 33.3333%;
+      }
+    }
+  }
+}
+
 @include breakpoint(large) {
   // Home page
+  .callback-address {
+    margin-left: rem-calc(60);
+  }
+  .head-row {
+    &.middle {
+      padding-top: rem-calc(36);
+      padding-bottom: rem-calc(36);
+    }
+  }
+  .logo-title {
+    font-size: rem-calc(27);
+  }
+  .callback-info {
+    margin-bottom: rem-calc(9);
+  }
+  .callback-phone {
+    margin-bottom: rem-calc(16);
+  }
+  .callback-phone-link {
+    font-size: rem-calc(31);
+    line-height: 1;
+    font-weight: 300;
+    color: $body-font-color;
+    &:hover,
+    &:focus {
+      color: $body-font-color;
+    }
+  }
+  .services-menu {
+    .menu {
+      padding: rem-calc(8 0 7);
+      background-color: $primary-color;
+      li {
+        padding-top: rem-calc(14);
+        padding-bottom: rem-calc(14);
+      }
+    }
+  }
+}
+
+@include breakpoint(xlarge) {
+  // Home page
+  .logo-picture {
+    padding-right: rem-calc(6);
+  }
 }
 
 @include breakpoint(1200px) {
   // Home page
+  .services-menu {
+    .menu {
+      justify-content: space-between;
+      li {
+        & + li {
+          border-left: 1px solid #1186c9;
+        }
+      }
+    }
+  }
 }
 
 @include breakpoint(1280px) {

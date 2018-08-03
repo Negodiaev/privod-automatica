@@ -78,9 +78,10 @@
 @import 'global/typography';
 
 // custom components
-@import 'components/navigation';
-
+@import 'components/header';
 @import 'components/footer';
+@import 'components/buttons';
+@import 'components/navigation';
 
 // media queries
 @import 'global/responsive';

@@ -15,7 +15,7 @@
 
   
   <div class="off-canvas-wrapper">
-    <div id="offCanvas" class="side off-canvas position-left" data-off-canvas>
+    <div id="offCanvas" class="side off-canvas position-left text-center" data-off-canvas>
       <ul class="main-menu vertical menu">
         <li>
           <a href="#">О компании</a>
@@ -31,30 +31,28 @@
         </li>
       </ul>
       <!-- /.main-menu -->
-      <div class="search input-group">
-        <input type="text" class="input-group-field">
-        <div class="input-group-button">
-          <button class="button" type="submit">
-            <svg class="icon" width="14" height="14">
-              <use xlink:href="#magnifier"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <!-- /.search -->
-      <div class="callback">
+      <form class="search-form">
+        <input type="text">
+        <button class="search-form-toggle button" type="button">
+          <svg class="icon" width="14" height="14">
+            <use xlink:href="#magnifier"></use>
+          </svg>
+        </button>
+      </form>
+      <!-- /.search-form -->
+      <div class="callback-address callback">
         <div class="callback-title">Адрес компании</div>
         <div class="callback-info">г. Пермь, ул. Ижевская, 25
           <br>ПН-ПТ с 6:30 до 15:30 МСК</div>
         <a href="#" class="callback-link">Отправить заявку</a>
       </div>
-      <!-- /.callback -->
+      <!-- /.callback-address -->
     </div>
     <!-- /.off-canvas -->
     <div class="off-canvas-content" data-off-canvas-content>
       <div class="sticky-footer">
         <header class="head">
-          <div class="head-row top show-for-medium">
+          <div class="head-row top show-for-large">
             <div class="grid-container">
               <div class="navigation-wrap flex-container align-right">
                 <nav class="navigation">
@@ -74,27 +72,25 @@
                   </ul>
                 </nav>
                 <!-- /.navigation -->
-                <div class="search input-group">
-                  <input type="text" class="input-group-field">
-                  <div class="input-group-button">
-                    <button class="button" type="submit">
-                      <svg class="icon" width="14" height="14">
-                        <use xlink:href="#magnifier"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.search -->
+                <form class="search-form">
+                  <input type="text">
+                  <button class="search-form-toggle button rounded" type="button">
+                    <svg class="icon" width="14" height="14">
+                      <use xlink:href="#magnifier"></use>
+                    </svg>
+                  </button>
+                </form>
+                <!-- /.search-form -->
               </div>
               <!-- /.navigation-wrap -->
             </div>
             <!-- /.grid-container -->
           </div>
           <!-- /.head-row -->
-          <div class="head-row">
+          <div class="head-row middle">
             <div class="grid-container">
-              <div class="grid-x grid-padding-x">
-                <div class="cell small-2 hide-for-medium">
+              <div class="grid-x grid-padding-x align-middle">
+                <div class="cell small-2 hide-for-large">
                   <button type="button" class="burger" data-open="offCanvas" aria-expanded="false" aria-controls="offCanvas">
                     <i></i>
                     <i></i>
@@ -102,41 +98,41 @@
                   </button>
                 </div>
                 <!-- /.cell -->
-                <div class="cell small-8 medium-4">
+                <div class="cell small-8 large-5">
                   <div class="logo">
                     <div class="logo-picture logo-cell">
                       <img src="assets/img/logo.png" alt="">
                     </div>
                     <div class="logo-info logo-cell">
                       <div class="logo-title">Привод Автоматика</div>
-                      <div class="logo-description show-for-medium">Комплексные системы решений автоматизации технологических процессов</div>
+                      <div class="logo-description show-for-large">Комплексные системы решений автоматизации технологических процессов</div>
                     </div>
                   </div>
                   <!-- /.logo -->
                 </div>
                 <!-- /.cell -->
-                <div class="cell show-for-medium medium-4">
-                  <div class="callback">
+                <div class="cell show-for-large large-4">
+                  <div class="callback-address callback">
                     <div class="callback-title">Адрес компании</div>
                     <div class="callback-info">г. Пермь, ул. Ижевская, 25
                       <br>ПН-ПТ с 6:30 до 15:30 МСК</div>
                     <a href="#" class="callback-link">Отправить заявку</a>
                   </div>
-                  <!-- /.callback -->
+                  <!-- /.callback-address -->
                 </div>
                 <!-- /.cell -->
-                <div class="cell small-2 medium-4">
+                <div class="cell small-2 large-3 flex-container flex-dir-column align-bottom">
                   <div class="callback">
-                    <div class="callback-title show-for-medium">Бесплатный звонок по России</div>
-                    <div>
-                      <a href="tel:+78002504890" class="callback-phone">
-                        <svg class="icon hide-for-medium" width="24" height="24">
+                    <div class="callback-title show-for-large">Бесплатный звонок по России</div>
+                    <div class="callback-phone">
+                      <a href="tel:+78002504890" class="callback-phone-link">
+                        <svg class="icon hide-for-large" width="24" height="24">
                           <use xlink:href="#phone"></use>
                         </svg>
-                        <span class="callback-phone-text show-for-medium">8-800-250-4890</span>
+                        <span class="callback-phone-text show-for-large">8-800-250-4890</span>
                       </a>
                     </div>
-                    <a href="#" class="callback-link show-for-medium">Заказать обратный звонок</a>
+                    <a href="#" class="callback-link show-for-large">Заказать обратный звонок</a>
                   </div>
                   <!-- /.callback -->
                 </div>
@@ -151,7 +147,7 @@
             <div class="grid-container">
               <div class="services-menu">
                 <button type="button" class="services-menu-toggle button hide-for-large">Список услуг</button>
-                <ul>
+                <ul class="vertical menu simple medium-horizontal">
                   <li>
                     <a href="#">Ремонт электроники</a>
                   </li>
@@ -178,121 +174,45 @@
           </div>
           <!-- /.head-row -->
         </header>
-        <!-- /.head -->      <main class="main">
+        <!-- /.head -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>      <main class="main">
           <div class="hero">
-            <div id="hero-slider" class="hero-slider swiper-container">
-              <div class="swiper-wrapper">
-                <div class="hero-slide swiper-slide">
-                  <img src="assets/img/hero/bg-slide-1.jpg" alt="">
-                  <div class="hero-slide-inner">
-                    <div class="grid-container">
-                      <div class="grid-x">
-                        <div class="cell medium-10 large-6">
-                          <div class="hero-content">
-                            <div class="hero-title title">Ремонт промышленной электроники</div>
-                            <p>Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль;</p>
-                            <p>В общем плане связная и полная последовательность символов.Существуют две основные трактовки понятия</p>
-                            <a href="#" class="button">Перейти</a>
-                          </div>
-                          <!-- /.hero-content -->
-                        </div>
-                        <!-- /.cell -->
-                      </div>
-                      <!-- /.grid-x -->
-                    </div>
-                    <!-- /.grid-container -->
-                  </div>
-                  <!-- /.hero-slide-inner -->
-                </div>
-                <!-- /.hero-slide -->
-                <div class="hero-slide swiper-slide">
-                  <img src="assets/img/hero/bg-slide-1.jpg" alt="">
-                  <div class="hero-slide-inner">
-                    <div class="grid-container">
-                      <div class="grid-x">
-                        <div class="cell medium-10 large-6">
-                          <div class="hero-content">
-                            <div class="hero-title title">Ремонт промышленной электроники</div>
-                            <p>Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль;</p>
-                            <p>В общем плане связная и полная последовательность символов.Существуют две основные трактовки понятия</p>
-                            <a href="#" class="button">Перейти</a>
-                          </div>
-                          <!-- /.hero-content -->
-                        </div>
-                        <!-- /.cell -->
-                      </div>
-                      <!-- /.grid-x -->
-                    </div>
-                    <!-- /.grid-container -->
-                  </div>
-                  <!-- /.hero-slide-inner -->
-                </div>
-                <!-- /.hero-slide -->
-                <div class="hero-slide swiper-slide">
-                  <img src="assets/img/hero/bg-slide-1.jpg" alt="">
-                  <div class="hero-slide-inner">
-                    <div class="grid-container">
-                      <div class="grid-x">
-                        <div class="cell medium-10 large-6">
-                          <div class="hero-content">
-                            <div class="hero-title title">Ремонт промышленной электроники</div>
-                            <p>Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль;</p>
-                            <p>В общем плане связная и полная последовательность символов.Существуют две основные трактовки понятия</p>
-                            <a href="#" class="button">Перейти</a>
-                          </div>
-                          <!-- /.hero-content -->
-                        </div>
-                        <!-- /.cell -->
-                      </div>
-                      <!-- /.grid-x -->
-                    </div>
-                    <!-- /.grid-container -->
-                  </div>
-                  <!-- /.hero-slide-inner -->
-                </div>
-                <!-- /.hero-slide -->
-              </div>
-              <!-- Add Pagination -->
-              <div id="hero-slider-pagination" class="swiper-pagination"></div>
-            </div>
-          </div>
-          <!-- /.hero -->        <div class="services section light">
+    <div id="hero-slider" class="hero-slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="hero-slide swiper-slide">
+          <img src="assets/img/hero/bg-slide-1.jpg" alt="">
+          <div class="hero-slide-inner">
             <div class="grid-container">
-              <div class="blocks grid-x grid-padding-x medium-up-2 large-up-3 text-center align-center">
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture card-section">
-                      <img src="assets/img/services/1.jpg" alt="">
-                    </div>
-                    <div class="card-info card-section">
-                      <div class="card-title">Ремонт промышленной электроники</div>
-                    </div>
-                  </a>
-                  <!-- /.card -->
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture card-section">
-                      <img src="assets/img/services/2.jpg" alt="">
-                    </div>
-                    <div class="card-info card-section">
-                      <div class="card-title">Модернизация станков</div>
-                    </div>
-                  </a>
-                  <!-- /.card -->
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture card-section">
-                      <img src="assets/img/services/3.jpg" alt="">
-                    </div>
-                    <div class="card-info card-section">
-                      <div class="card-title">Экспертное обследование электропривода</div>
-                    </div>
-                  </a>
-                  <!-- /.card -->
+              <div class="grid-x">
+                <div class="cell medium-10 large-6">
+                  <div class="hero-content">
+                    <div class="hero-title title">Ремонт промышленной электроники</div>
+                    <p>Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль;</p>
+                    <p>В общем плане связная и полная последовательность символов.Существуют две основные трактовки понятия</p>
+                    <a href="#" class="button">Перейти</a>
+                  </div>
+                  <!-- /.hero-content -->
                 </div>
                 <!-- /.cell -->
               </div>
@@ -300,94 +220,22 @@
             </div>
             <!-- /.grid-container -->
           </div>
-          <!-- /.services -->        <div class="advantages section">
+          <!-- /.hero-slide-inner -->
+        </div>
+        <!-- /.hero-slide -->
+        <div class="hero-slide swiper-slide">
+          <img src="assets/img/hero/bg-slide-1.jpg" alt="">
+          <div class="hero-slide-inner">
             <div class="grid-container">
-              <div class="section-title title text-center">Наши преимущества</div>
-              <div class="blocks grid-x grid-padding-x medium-up-2 large-up-3 align-center">
-                <div class="cell">
-                  <div class="advantages-item">
-                    <div class="advantages-item-picture">
-                      <svg class="icon" width="53" height="39">
-                        <use xlink:href="#graduation-cap"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages-item-content">
-                      <div class="advantages-item-description">Коллектив увлеченных специалистов в области промышленной электроники</div>
-                    </div>
+              <div class="grid-x">
+                <div class="cell medium-10 large-6">
+                  <div class="hero-content">
+                    <div class="hero-title title">Ремонт промышленной электроники</div>
+                    <p>Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль;</p>
+                    <p>В общем плане связная и полная последовательность символов.Существуют две основные трактовки понятия</p>
+                    <a href="#" class="button">Перейти</a>
                   </div>
-                  <!-- /.advantages-item -->
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <div class="advantages-item">
-                    <div class="advantages-item-picture">
-                      <svg class="icon" width="43" height="45">
-                        <use xlink:href="#gear"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages-item-content">
-                      <div class="advantages-item-description">Собственное производство систем АДЧР</div>
-                      <a href="#">Подробнее</a>
-                    </div>
-                  </div>
-                  <!-- /.advantages-item -->
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <div class="advantages-item">
-                    <div class="advantages-item-picture">
-                      <svg class="icon" width="46" height="46">
-                        <use xlink:href="#around-the-clock"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages-item-content">
-                      <div class="advantages-item-description">Бригады сервисных инженеров, всегда готовы прийти к вам на помощь</div>
-                    </div>
-                  </div>
-                  <!-- /.advantages-item -->
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <div class="advantages-item">
-                    <div class="advantages-item-picture">
-                      <svg class="icon" width="47" height="40">
-                        <use xlink:href="#crown"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages-item-content">
-                      <div class="advantages-item-description">Надежный партнер с гарантией качества и технической поддержкой с 2012 года</div>
-                    </div>
-                  </div>
-                  <!-- /.advantages-item -->
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <div class="advantages-item">
-                    <div class="advantages-item-picture">
-                      <svg class="icon" width="50" height="50">
-                        <use xlink:href="#cup"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages-item-content">
-                      <div class="advantages-item-description">574 выполненных проекта в области промышленной электроники</div>
-                      <a href="#">Cмотреть проеты</a>
-                    </div>
-                  </div>
-                  <!-- /.advantages-item -->
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <div class="advantages-item">
-                    <div class="advantages-item-picture">
-                      <svg class="icon" width="49" height="49">
-                        <use xlink:href="#discount"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages-item-content">
-                      <div class="advantages-item-description">Гибкий подход в ценовой политике. Цена - это повод для диалога.</div>
-                    </div>
-                  </div>
-                  <!-- /.advantages-item -->
+                  <!-- /.hero-content -->
                 </div>
                 <!-- /.cell -->
               </div>
@@ -395,74 +243,22 @@
             </div>
             <!-- /.grid-container -->
           </div>
-          <!-- /.advantages -->        <div class="partners section light">
-            <div class="grid-container text-center">
-              <div class="section-title title">Нам доверяют</div>
-              <div class="blocks grid-x small-up-2 medium-up-3 large-up-6 align-center">
-                <div class="cell">
-                  <a href="#" class="partners-item">
-                    <img src="assets/img/partners/1.jpg" alt="">
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="partners-item">
-                    <img src="assets/img/partners/2.jpg" alt="">
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="partners-item">
-                    <img src="assets/img/partners/3.jpg" alt="">
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="partners-item">
-                    <img src="assets/img/partners/4.jpg" alt="">
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="partners-item">
-                    <img src="assets/img/partners/5.jpg" alt="">
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="partners-item">
-                    <img src="assets/img/partners/6.jpg" alt="">
-                  </a>
-                </div>
-                <!-- /.cell -->
-              </div>
-              <!-- /.grid-x -->
-            </div>
-            <!-- /.grid-container -->
-          </div>
-          <!-- /.partners -->        <div class="production section">
+          <!-- /.hero-slide-inner -->
+        </div>
+        <!-- /.hero-slide -->
+        <div class="hero-slide swiper-slide">
+          <img src="assets/img/hero/bg-slide-1.jpg" alt="">
+          <div class="hero-slide-inner">
             <div class="grid-container">
-              <div class="section-title title text-center">Производство АДЧР</div>
-              <div class="grid-x grid-padding-x">
-                <div class="cell large-6">
-                  <img src="assets/img/production/1.jpg" alt="" class="thumbnail">
-                </div>
-                <!-- /.cell -->
-                <div class="cell large-6">
-                  <div class="production-info">
-                    <ul class="checked-list">
-                      <li>Cнижает нагрузку на питающую сеть и электродвигатель (снижение пусковых токов)</li>
-                      <li>Плавность пуска</li>
-                      <li>Возможность поддержание, в заданном диапазоне, 
-                        скорости вращения ротора электродвигателя</li>
-                      <li>Возможность работы на низких оборотах ротора без потери мощности (кВт), КПД (ɳ), момента (Н*м) и перегрева обмотки ротора</li>
-                      <li>При массовом использовании, дает ощутимый экономический эффект, за счет экономии электроэнергии</li>
-                      <li>Увеличивает ресурс работы, как самого электродвигателя, 
-                        так и приводимого в движение оборудования</li>
-                    </ul>
-                    <a href="#" class="button">Читать подробнее</a>
+              <div class="grid-x">
+                <div class="cell medium-10 large-6">
+                  <div class="hero-content">
+                    <div class="hero-title title">Ремонт промышленной электроники</div>
+                    <p>Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль;</p>
+                    <p>В общем плане связная и полная последовательность символов.Существуют две основные трактовки понятия</p>
+                    <a href="#" class="button">Перейти</a>
                   </div>
-                  <!-- /.production-info -->
+                  <!-- /.hero-content -->
                 </div>
                 <!-- /.cell -->
               </div>
@@ -470,192 +266,415 @@
             </div>
             <!-- /.grid-container -->
           </div>
-          <!-- /.production -->        <div class="goods section light">
-            <div class="grid-container text-center">
-              <div class="section-title title">Поставка средств автоматизации</div>
-              <div class="blocks grid-x grid-padding-x medium-up-3 large-up-6 align-center">
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/1.jpg" alt="">
-                    </div>
-                    <div class="card-info">Преобразователи частоты</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/2.jpg" alt="">
-                    </div>
-                    <div class="card-info">Болгарские привода постоянного- переменного тока</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/3.jpg" alt="">
-                    </div>
-                    <div class="card-info">Сервопривода и серводвигатели</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/4.jpg" alt="">
-                    </div>
-                    <div class="card-info">Станции и шкафы управления</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/5.jpg" alt="">
-                    </div>
-                    <div class="card-info">Устройство плавного пуска</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/6.jpg" alt="">
-                    </div>
-                    <div class="card-info">Программируемые логические контроллеры</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/7.jpg" alt="">
-                    </div>
-                    <div class="card-info">Панели оператора</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/8.jpg" alt="">
-                    </div>
-                    <div class="card-info">Модули рекуперации</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/9.jpg" alt="">
-                    </div>
-                    <div class="card-info">Датчики давления и уровня</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/10.jpg" alt="">
-                    </div>
-                    <div class="card-info">Источники питания</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/11.jpg" alt="">
-                    </div>
-                    <div class="card-info">Энкодеры</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/12.jpg" alt="">
-                    </div>
-                    <div class="card-info">Температурные контроллеры</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/13.jpg" alt="">
-                    </div>
-                    <div class="card-info">Коммуникационные модули</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/14.jpg" alt="">
-                    </div>
-                    <div class="card-info">Неуправляемые коммутаторы</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/15.jpg" alt="">
-                    </div>
-                    <div class="card-info">Счетчики и таймеры</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/16.jpg" alt="">
-                    </div>
-                    <div class="card-info">Регуляторы мощности</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/17.jpg" alt="">
-                    </div>
-                    <div class="card-info">Твердотельные реле</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-                <div class="cell">
-                  <a href="#" class="card">
-                    <div class="card-picture">
-                      <img src="assets/img/goods/18.jpg" alt="">
-                    </div>
-                    <div class="card-info">Механические компоненты</div>
-                  </a>
-                </div>
-                <!-- /.cell -->
-              </div>
+          <!-- /.hero-slide-inner -->
+        </div>
+        <!-- /.hero-slide -->
+      </div>
+      <!-- Add Pagination -->
+      <div id="hero-slider-pagination" class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- /.hero --> <div class="services section light">
+    <div class="grid-container">
+      <div class="blocks grid-x grid-padding-x medium-up-2 large-up-3 text-center align-center">
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture card-section">
+              <img src="assets/img/services/1.jpg" alt="">
+            </div>
+            <div class="card-info card-section">
+              <div class="card-title">Ремонт промышленной электроники</div>
+            </div>
+          </a>
+          <!-- /.card -->
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture card-section">
+              <img src="assets/img/services/2.jpg" alt="">
+            </div>
+            <div class="card-info card-section">
+              <div class="card-title">Модернизация станков</div>
+            </div>
+          </a>
+          <!-- /.card -->
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture card-section">
+              <img src="assets/img/services/3.jpg" alt="">
+            </div>
+            <div class="card-info card-section">
+              <div class="card-title">Экспертное обследование электропривода</div>
+            </div>
+          </a>
+          <!-- /.card -->
+        </div>
+        <!-- /.cell -->
+      </div>
+      <!-- /.grid-x -->
+    </div>
+    <!-- /.grid-container -->
+  </div>
+  <!-- /.services --> <div class="advantages section">
+    <div class="grid-container">
+      <div class="section-title title text-center">Наши преимущества</div>
+      <div class="blocks grid-x grid-padding-x medium-up-2 large-up-3 align-center">
+        <div class="cell">
+          <div class="advantages-item">
+            <div class="advantages-item-picture">
+              <svg class="icon" width="53" height="39">
+                <use xlink:href="#graduation-cap"></use>
+              </svg>
+            </div>
+            <div class="advantages-item-content">
+              <div class="advantages-item-description">Коллектив увлеченных специалистов в области промышленной электроники</div>
             </div>
           </div>
-          <!-- /.goods -->        <div class="text-block section">
-            <div class="grid-container">
-              <div class="section-title title text-center">Это блок заключительного текста</div>
-              <p>Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая
-                мысль; в общем плане связная и полная последовательность символов.Существуют две основные трактовки понятия «текст»:
-                имманентная (расширенная, философски нагруженная) и репрезентативная (более частная). Имманентный подход подразумевает</p>
-              <p>отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный
-                — рассмотрение текста как особой формы представления знаний о внешней тексту действительности.</p>
-              <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи. Восприятие текста изучается
-                в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст следующим образом:
-                «это письменное сообщение, объективированное в виде письменного документа, состоящее из ряда высказываний, объединённых
-                разными типами лексической, грамматической и логической связи, имеющее определённый моральный характер, прагматическую
-                установку и соответственно литературно обработанное»[1].</p>
+          <!-- /.advantages-item -->
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <div class="advantages-item">
+            <div class="advantages-item-picture">
+              <svg class="icon" width="43" height="45">
+                <use xlink:href="#gear"></use>
+              </svg>
             </div>
-            <!-- /.grid-container -->
+            <div class="advantages-item-content">
+              <div class="advantages-item-description">Собственное производство систем АДЧР</div>
+              <a href="#">Подробнее</a>
+            </div>
           </div>
-          <!-- /.text-block -->      </main>
+          <!-- /.advantages-item -->
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <div class="advantages-item">
+            <div class="advantages-item-picture">
+              <svg class="icon" width="46" height="46">
+                <use xlink:href="#around-the-clock"></use>
+              </svg>
+            </div>
+            <div class="advantages-item-content">
+              <div class="advantages-item-description">Бригады сервисных инженеров, всегда готовы прийти к вам на помощь</div>
+            </div>
+          </div>
+          <!-- /.advantages-item -->
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <div class="advantages-item">
+            <div class="advantages-item-picture">
+              <svg class="icon" width="47" height="40">
+                <use xlink:href="#crown"></use>
+              </svg>
+            </div>
+            <div class="advantages-item-content">
+              <div class="advantages-item-description">Надежный партнер с гарантией качества и технической поддержкой с 2012 года</div>
+            </div>
+          </div>
+          <!-- /.advantages-item -->
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <div class="advantages-item">
+            <div class="advantages-item-picture">
+              <svg class="icon" width="50" height="50">
+                <use xlink:href="#cup"></use>
+              </svg>
+            </div>
+            <div class="advantages-item-content">
+              <div class="advantages-item-description">574 выполненных проекта в области промышленной электроники</div>
+              <a href="#">Cмотреть проеты</a>
+            </div>
+          </div>
+          <!-- /.advantages-item -->
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <div class="advantages-item">
+            <div class="advantages-item-picture">
+              <svg class="icon" width="49" height="49">
+                <use xlink:href="#discount"></use>
+              </svg>
+            </div>
+            <div class="advantages-item-content">
+              <div class="advantages-item-description">Гибкий подход в ценовой политике. Цена - это повод для диалога.</div>
+            </div>
+          </div>
+          <!-- /.advantages-item -->
+        </div>
+        <!-- /.cell -->
+      </div>
+      <!-- /.grid-x -->
+    </div>
+    <!-- /.grid-container -->
+  </div>
+  <!-- /.advantages --> <div class="partners section light">
+    <div class="grid-container text-center">
+      <div class="section-title title">Нам доверяют</div>
+      <div class="blocks grid-x small-up-2 medium-up-3 large-up-6 align-center">
+        <div class="cell">
+          <a href="#" class="partners-item">
+            <img src="assets/img/partners/1.jpg" alt="">
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="partners-item">
+            <img src="assets/img/partners/2.jpg" alt="">
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="partners-item">
+            <img src="assets/img/partners/3.jpg" alt="">
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="partners-item">
+            <img src="assets/img/partners/4.jpg" alt="">
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="partners-item">
+            <img src="assets/img/partners/5.jpg" alt="">
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="partners-item">
+            <img src="assets/img/partners/6.jpg" alt="">
+          </a>
+        </div>
+        <!-- /.cell -->
+      </div>
+      <!-- /.grid-x -->
+    </div>
+    <!-- /.grid-container -->
+  </div>
+  <!-- /.partners --> <div class="production section">
+    <div class="grid-container">
+      <div class="section-title title text-center">Производство АДЧР</div>
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-6">
+          <img src="assets/img/production/1.jpg" alt="" class="thumbnail">
+        </div>
+        <!-- /.cell -->
+        <div class="cell large-6">
+          <div class="production-info">
+            <ul class="checked-list">
+              <li>Cнижает нагрузку на питающую сеть и электродвигатель (снижение пусковых токов)</li>
+              <li>Плавность пуска</li>
+              <li>Возможность поддержание, в заданном диапазоне, 
+                скорости вращения ротора электродвигателя</li>
+              <li>Возможность работы на низких оборотах ротора без потери мощности (кВт), КПД (ɳ), момента (Н*м) и перегрева обмотки ротора</li>
+              <li>При массовом использовании, дает ощутимый экономический эффект, за счет экономии электроэнергии</li>
+              <li>Увеличивает ресурс работы, как самого электродвигателя, 
+                так и приводимого в движение оборудования</li>
+            </ul>
+            <a href="#" class="button">Читать подробнее</a>
+          </div>
+          <!-- /.production-info -->
+        </div>
+        <!-- /.cell -->
+      </div>
+      <!-- /.grid-x -->
+    </div>
+    <!-- /.grid-container -->
+  </div>
+  <!-- /.production --> <div class="goods section light">
+    <div class="grid-container text-center">
+      <div class="section-title title">Поставка средств автоматизации</div>
+      <div class="blocks grid-x grid-padding-x medium-up-3 large-up-6 align-center">
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/1.jpg" alt="">
+            </div>
+            <div class="card-info">Преобразователи частоты</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/2.jpg" alt="">
+            </div>
+            <div class="card-info">Болгарские привода постоянного- переменного тока</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/3.jpg" alt="">
+            </div>
+            <div class="card-info">Сервопривода и серводвигатели</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/4.jpg" alt="">
+            </div>
+            <div class="card-info">Станции и шкафы управления</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/5.jpg" alt="">
+            </div>
+            <div class="card-info">Устройство плавного пуска</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/6.jpg" alt="">
+            </div>
+            <div class="card-info">Программируемые логические контроллеры</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/7.jpg" alt="">
+            </div>
+            <div class="card-info">Панели оператора</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/8.jpg" alt="">
+            </div>
+            <div class="card-info">Модули рекуперации</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/9.jpg" alt="">
+            </div>
+            <div class="card-info">Датчики давления и уровня</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/10.jpg" alt="">
+            </div>
+            <div class="card-info">Источники питания</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/11.jpg" alt="">
+            </div>
+            <div class="card-info">Энкодеры</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/12.jpg" alt="">
+            </div>
+            <div class="card-info">Температурные контроллеры</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/13.jpg" alt="">
+            </div>
+            <div class="card-info">Коммуникационные модули</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/14.jpg" alt="">
+            </div>
+            <div class="card-info">Неуправляемые коммутаторы</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/15.jpg" alt="">
+            </div>
+            <div class="card-info">Счетчики и таймеры</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/16.jpg" alt="">
+            </div>
+            <div class="card-info">Регуляторы мощности</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/17.jpg" alt="">
+            </div>
+            <div class="card-info">Твердотельные реле</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+        <div class="cell">
+          <a href="#" class="card">
+            <div class="card-picture">
+              <img src="assets/img/goods/18.jpg" alt="">
+            </div>
+            <div class="card-info">Механические компоненты</div>
+          </a>
+        </div>
+        <!-- /.cell -->
+      </div>
+    </div>
+  </div>
+  <!-- /.goods --> <div class="text-block section">
+    <div class="grid-container">
+      <div class="section-title title text-center">Это блок заключительного текста</div>
+      <p>Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая
+        мысль; в общем плане связная и полная последовательность символов.Существуют две основные трактовки понятия «текст»:
+        имманентная (расширенная, философски нагруженная) и репрезентативная (более частная). Имманентный подход подразумевает</p>
+      <p>отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный
+        — рассмотрение текста как особой формы представления знаний о внешней тексту действительности.</p>
+      <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи. Восприятие текста изучается
+        в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст следующим образом:
+        «это письменное сообщение, объективированное в виде письменного документа, состоящее из ряда высказываний, объединённых
+        разными типами лексической, грамматической и логической связи, имеющее определённый моральный характер, прагматическую
+        установку и соответственно литературно обработанное»[1].</p>
+    </div>
+    <!-- /.grid-container -->
+  </div>
+  <!-- /.text-block -->
+        </main>
         <!-- /.main -->
         <footer class="footer">
           <div class="grid-container">
