@@ -14,6 +14,25 @@ a {
   }
 }
 
+h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.section-title {
+  margin-bottom: $global-margin;
+  font-size: rem-calc(18);
+  line-height: unitless-calc(24, 18);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .custom-list {
   margin-left: 0;
   list-style: none;
@@ -31,13 +50,4 @@ a {
       border-top: 1px solid #d6d6d6;
     }
   }
-}
-
-.section-title {
-  margin-bottom: $global-margin;
-  font-size: rem-calc(18);
-  line-height: unitless-calc(24, 18);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
 }

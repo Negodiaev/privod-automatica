@@ -130,47 +130,64 @@ $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
-$header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-lineheight: 1.25;
+$header-margin-bottom: 1rem;
 $header-styles: (
   small: (
     'h1': (
-      'font-size': 24
+      'font-size': 20,
+      'mt': rem-calc(12),
+      'mb': rem-calc(20)
     ),
     'h2': (
-      'font-size': 20
+      'font-size': 21,
+      'mt': rem-calc(10),
+      'mb': rem-calc(20)
     ),
     'h3': (
-      'font-size': 19
-    ),
-    'h4': (
       'font-size': 18
     ),
+    'h4': (
+      'font-size': 16
+    ),
     'h5': (
-      'font-size': 17
+      'font-size': 15
     ),
     'h6': (
-      'font-size': 16
+      'font-size': 14
     )
   ),
   medium: (
     'h1': (
-      'font-size': 48
-    ),
-    'h2': (
-      'font-size': 40
-    ),
-    'h3': (
-      'font-size': 31
-    ),
-    'h4': (
       'font-size': 25
     ),
+    'h2': (
+      'font-size': 27,
+      'lh': unitless-calc(29, 27)
+    ),
+    'h3': (
+      'font-size': 20,
+      'lh': unitless-calc(25, 20)
+    ),
+    'h4': (
+      'font-size': 16,
+      'lh': unitless-calc(25, 16)
+    ),
     'h5': (
-      'font-size': 20
+      'font-size': 15
     ),
     'h6': (
-      'font-size': 16
+      'font-size': 14
+    )
+  ),
+  large: (
+    'h1': (
+      'lh': unitless-calc(56, 25),
+      'mb': 50
+    ),
+    'h2': (
+      'mt': 22,
+      'mb': 40
     )
   )
 );
@@ -270,17 +287,17 @@ $badge-minwidth: 2.1em;
 $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
-$breadcrumbs-margin: 0 0 $global-margin 0;
+$breadcrumbs-margin: 0;
 $breadcrumbs-item-font-size: rem-calc(11);
-$breadcrumbs-item-color: $primary-color;
-$breadcrumbs-item-color-current: $black;
-$breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: 0.75rem;
-$breadcrumbs-item-uppercase: true;
+$breadcrumbs-item-color: #666;
+$breadcrumbs-item-color-current: $medium-gray;
+$breadcrumbs-item-color-disabled: $dark-gray;
+$breadcrumbs-item-margin: rem-calc(3);
+$breadcrumbs-item-uppercase: false;
 $breadcrumbs-item-separator: true;
-$breadcrumbs-item-separator-item: '/';
+$breadcrumbs-item-separator-item: '▶';
 $breadcrumbs-item-separator-item-rtl: '\\';
-$breadcrumbs-item-separator-color: $medium-gray;
+$breadcrumbs-item-separator-color: #c1c1c1;
 // 11. Button
 // ----------
 $button-font-family: inherit;

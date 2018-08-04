@@ -82,6 +82,7 @@
 // custom components
 @import 'components/header';
 @import 'components/navigation';
+@import 'components/breadcrumbs';
 @import 'components/footer';
 
 // sections
@@ -92,6 +93,9 @@
 @import 'components/production';
 @import 'components/goods';
 @import 'components/text-block';
+
+// pages
+@import 'pages/page';
 
 // media queries
 @import 'global/responsive';

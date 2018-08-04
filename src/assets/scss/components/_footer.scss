@@ -2,9 +2,7 @@
   color: $white;
   background-color: #08486c;
   .menu-col {
-    &.second {
-      padding-bottom: rem-calc(30);
-    }
+    padding-bottom: rem-calc(30);
   }
   .logo-col {
     padding-top: rem-calc(30);
@@ -16,8 +14,8 @@
     flex: 0 0 rem-calc(60);
     padding-right: rem-calc(5);
   }
-  .logo-info,
-  .logo-title {
+  .logo-title,
+  .logo-description {
     color: #b6e4ff;
   }
   .callback {

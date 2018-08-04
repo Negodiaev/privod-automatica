@@ -23,6 +23,12 @@ body {
   }
 }
 
+.main {
+  &.light {
+    background-color: #f8fbfc;
+  }
+}
+
 .side {
   .main-menu {
     li {

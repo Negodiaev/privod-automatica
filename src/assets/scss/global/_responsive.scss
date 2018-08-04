@@ -32,6 +32,16 @@
   .text-block {
     font-size: rem-calc(15);
   }
+  // Inner page
+  .breadcrumbs {
+    li {
+      display: none;
+      &:first-child,
+      &:last-child {
+        display: list-item;
+      }
+    }
+  }
 }
 
 @include breakpoint(medium down) {
@@ -129,6 +139,18 @@
   .footer {
     .callback-col {
       padding-top: rem-calc(30);
+    }
+  }
+
+  // Inner page
+  .breadcrumbs {
+    li {
+      font-size: rem-calc(13);
+    }
+  }
+  .page {
+    .goods-blocks {
+      padding-bottom: rem-calc(20);
     }
   }
 }
@@ -240,6 +262,12 @@
     .copyright {
       white-space: nowrap;
     }
+  }
+
+  // Inner page
+  .breadcrumbs {
+    padding-top: rem-calc(26);
+    padding-bottom: rem-calc(19);
   }
 }
 

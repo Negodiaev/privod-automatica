@@ -26,6 +26,7 @@
 
 .logo {
   display: flex;
+  border: 0;
 }
 
 .logo-cell {
@@ -46,6 +47,7 @@
   max-width: rem-calc(350);
   font-size: rem-calc(15);
   line-height: unitless-calc(19, 15);
+  color: $body-font-color;
 }
 
 .callback-title {

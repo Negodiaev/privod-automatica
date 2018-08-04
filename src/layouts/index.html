@@ -14,11 +14,55 @@
 
 <body>
 
-  {{> body}}
+  <div class="off-canvas-wrapper">
+    <div id="offCanvas" class="side off-canvas position-left text-center" data-off-canvas>
+      <ul class="main-menu vertical menu">
+        <li>
+          <a href="#">О компании</a>
+        </li>
+        <li>
+          <a href="#">Клиенты</a>
+        </li>
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <!-- /.main-menu -->
+      <form class="search-form">
+        <input type="text">
+        <button class="search-form-toggle button" type="button">
+          <svg class="icon" width="14" height="14">
+            <use xlink:href="#magnifier"></use>
+          </svg>
+        </button>
+      </form>
+      <!-- /.search-form -->
+      <div class="callback-address callback">
+        <div class="callback-title">Адрес компании</div>
+        <div class="callback-info">г. Пермь, ул. Ижевская, 25
+          <br>ПН-ПТ с 6:30 до 15:30 МСК</div>
+        <a href="#" class="callback-link">Отправить заявку</a>
+      </div>
+      <!-- /.callback-address -->
+    </div>
+    <!-- /.off-canvas -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="sticky-footer">
+        {{> header}} {{> body}} {{> footer}}
+      </div>
+      <!-- /.sticky-footer -->
+    </div>
+    <!-- /.off-canvas-content -->
+  </div>
+  <!-- /.off-canvas-wrapper -->
 
   <div class="sprite-container"> {{> sprite}} </div>
 
   <script src="{{root}}assets/js/app.js"></script>
+  
 </body>
 
 </html>

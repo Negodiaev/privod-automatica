@@ -1,0 +1,21 @@
+.breadcrumbs {
+  padding: rem-calc(15 0);
+  li {
+    &:not(:last-child) {
+      line-height: 1;
+    }
+    &:last-child {
+      padding: rem-calc(0 10);
+      background-color: $light-gray;
+    }
+  }
+  a {
+    padding: rem-calc(3 10 4);
+    border: 0;
+    background-color: $light-gray;
+    &:hover {
+      color: $dark-gray;
+      text-decoration: none;
+    }
+  }
+}
