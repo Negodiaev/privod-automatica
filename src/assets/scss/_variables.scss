@@ -284,19 +284,19 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 $button-font-family: inherit;
-$button-padding: 0.85em 1em;
+$button-padding: rem-calc(13 10);
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: 4%);
 $button-color: $white;
-$button-color-alt: $black;
-$button-radius: $global-radius;
+$button-color-alt: $white;
+$button-radius: 3px;
 $button-hollow-border-width: 1px;
 $button-sizes: (
-  tiny: 0.6rem,
-  small: 0.75rem,
-  default: 0.9rem,
+  tiny: rem-calc(11),
+  small: rem-calc(14),
+  default: rem-calc(15),
   large: 1.25rem
 );
 $button-palette: $foundation-palette;
@@ -327,10 +327,10 @@ $callout-link-tint: 30%;
 $card-background: $white;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
-$card-border: 1px solid $light-gray;
+$card-border: 4px solid transparent;
 $card-shadow: none;
 $card-border-radius: $global-radius;
-$card-padding: $global-padding;
+$card-padding: rem-calc(10);
 $card-margin-bottom: $global-margin;
 // 15. Close Button
 // ----------------
@@ -697,9 +697,9 @@ $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem;
 // 52. Thumbnail
 // -------------
-$thumbnail-border: solid 4px $white;
+$thumbnail-border: solid 6px $white;
 $thumbnail-margin-bottom: $global-margin;
-$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow: 0 3px 9px rgba(110, 110, 110, 0.44);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;

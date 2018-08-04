@@ -1,6 +1,10 @@
-.head {
+.head,
+.footer {
   font-size: rem-calc(15);
   line-height: unitless-calc(19, 15);
+}
+
+.head {
   background-color: $body-background;
 }
 
@@ -22,7 +26,6 @@
 
 .logo {
   display: flex;
-  justify-content: center;
 }
 
 .logo-cell {
@@ -32,7 +35,7 @@
 }
 
 .logo-title {
-  font-size: rem-calc(16);
+  font-size: rem-calc(27);
   line-height: unitless-calc(41, 27);
   font-weight: $global-weight-bold;
   white-space: nowrap;
@@ -41,11 +44,17 @@
 
 .logo-description {
   max-width: rem-calc(350);
+  font-size: rem-calc(15);
+  line-height: unitless-calc(19, 15);
 }
 
 .callback-title {
   margin-bottom: rem-calc(13);
   color: $medium-gray;
+}
+
+.callback-info {
+  margin-bottom: rem-calc(9);
 }
 
 .callback-link {
@@ -56,130 +65,4 @@
   a {
     border-bottom: 0;
   }
-}
-
-.navigation-wrap {
-  position: relative;
-  padding-right: rem-calc(85);
-  .search-form {
-    justify-content: flex-end;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    overflow: hidden;
-    padding: rem-calc(2 0);
-    transform: translateY(-50%);
-    transition: width 0.4s ease-in 0.6s;
-    input {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      padding-left: rem-calc(15);
-      width: 100%;
-      height: 100%;
-      border: 0;
-      border-radius: 50px;
-      opacity: 0;
-      background-color: $white;
-      box-shadow: none;
-      transform: translateY(-50%);
-    }
-    &.shown {
-      width: 100%;
-      input {
-        opacity: 1;
-        transition: opacity 0.4s ease-out;
-      }
-    }
-  }
-  .search-form-toggle {
-    position: relative;
-    color: $primary-color;
-    background-color: $white;
-    box-shadow: 0 1px 0 rgba(115, 115, 115, 0.44);
-    transition: box-shadow 0.2s ease-in-out;
-    &:hover,
-    &:focus {
-      box-shadow: none;
-    }
-  }
-}
-
-.search-form {
-  display: flex;
-  position: relative;
-  input {
-    margin-bottom: 0;
-    padding-right: rem-calc(45);
-  }
-}
-
-.search-form-toggle {
-  margin-bottom: 0;
-  padding: rem-calc(9 10 10);
-}
-
-.main-menu {
-  padding: rem-calc(18 0);
-  a {
-    display: inline-block;
-    line-height: unitless-calc(19, 15);
-    border-color: $body-font-color;
-    color: $body-font-color;
-    &:hover,
-    &:focus {
-      border-color: transparent;
-      color: $primary-color;
-    }
-  }
-  &.simple {
-    li {
-      & + li {
-        margin-left: rem-calc(70);
-      }
-    }
-  }
-}
-
-.services-menu {
-  color: $white;
-  background-color: $primary-color;
-  .menu {
-    background-color: scale-color($primary-color, $lightness: -8%);
-    li {
-      padding: rem-calc(10);
-      font-size: rem-calc(14);
-      line-height: unitless-calc(17, 14);
-      font-weight: 600;
-    }
-    a {
-      display: inline-block;
-      border-color: transparent;
-      color: $white;
-      &:hover {
-        border-color: $white;
-      }
-    }
-    &.simple {
-      li {
-        & + li {
-          margin-left: 0;
-        }
-      }
-    }
-  }
-  &.shown {
-    .menu {
-      padding: rem-calc(15 0);
-    }
-  }
-}
-
-.services-menu-toggle {
-  margin: 0;
-  width: 100%;
-  font-size: rem-calc(15);
-  font-weight: 600;
-  color: $white;
-  background-color: $anchor-color;
 }

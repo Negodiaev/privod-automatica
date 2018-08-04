@@ -55,7 +55,7 @@
 
 // vendor styles
 @import 'vendor/aos';
-@import 'vendor/slick-carousel';
+// @import 'vendor/slick-carousel';
 @import 'vendor/swiper';
 @import 'vendor/wa-mediabox';
 @import 'vendor/index-menu';
@@ -76,12 +76,22 @@
 @import 'global/base';
 @import 'global/layout';
 @import 'global/typography';
+@import 'components/buttons';
+@import 'components/sliders';
 
 // custom components
 @import 'components/header';
-@import 'components/footer';
-@import 'components/buttons';
 @import 'components/navigation';
+@import 'components/footer';
+
+// sections
+@import 'components/hero';
+@import 'components/services-cards';
+@import 'components/advantages';
+@import 'components/partners';
+@import 'components/production';
+@import 'components/goods';
+@import 'components/text-block';
 
 // media queries
 @import 'global/responsive';

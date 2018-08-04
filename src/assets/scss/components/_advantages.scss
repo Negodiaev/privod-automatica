@@ -1,0 +1,19 @@
+.advantages-item {
+  display: flex;
+  align-items: center;
+  padding: rem-calc(20 10 20 0);
+  height: 100%;
+  border: 1px solid rgba(162, 173, 180, 0.41);
+  line-height: unitless-calc(22, 16);
+  a {
+    margin-top: rem-calc(10);
+    font-size: rem-calc(15);
+    line-height: unitless-calc(19);
+  }
+}
+
+.advantages-item-picture {
+  flex: 0 0 rem-calc(60);
+  text-align: center;
+  color: $secondary-color;
+}

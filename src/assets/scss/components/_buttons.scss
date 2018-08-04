@@ -1,3 +1,21 @@
+.button {
+  box-sizing: border-box;
+  width: rem-calc(225);
+  border: 0;
+  line-height: unitless-calc(19, 15);
+  font-weight: 600;
+  white-space: nowrap;
+  &.short {
+    width: rem-calc(200);
+  }
+  &.long {
+    width: rem-calc(240);
+  }
+  &.rounded {
+    border-radius: 50%;
+  }
+}
+
 .burger {
   position: relative;
   width: 25px;
@@ -32,15 +50,5 @@
     i {
       background-color: $anchor-color-hover;
     }
-  }
-}
-
-.button {
-  // font-weight: $global-weight-bold;
-  // text-transform: uppercase;
-  // white-space: nowrap;
-  // letter-spacing: 0.1em;
-  &.rounded {
-    border-radius: 50%;
   }
 }

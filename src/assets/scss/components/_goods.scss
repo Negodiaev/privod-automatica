@@ -1,0 +1,21 @@
+.goods-blocks {
+  .card {
+    font-size: rem-calc(14);
+    line-height: unitless-calc(23, 14);
+    font-weight: 600;
+  }
+  .card-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: rem-calc(140);
+    vertical-align: middle;
+  }
+  .card-info {
+    padding: rem-calc(15 10 20);
+  }
+  img {
+    width: auto;
+  }
+}

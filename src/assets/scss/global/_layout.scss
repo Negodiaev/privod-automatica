@@ -1,4 +1,4 @@
-html,
+// html,
 body,
 .off-canvas-wrapper,
 .off-canvas-content {
@@ -54,5 +54,25 @@ body {
     padding-left: rem-calc(10);
     height: 100%;
     transform: translateY(-50%);
+  }
+}
+
+.section {
+  padding: rem-calc(20 0);
+  &.light {
+    background-color: #f8fbfc;
+  }
+}
+
+.blocks {
+  & > .cell {
+    margin-bottom: rem-calc(10);
+  }
+  .card {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  img {
+    width: 100%;
   }
 }

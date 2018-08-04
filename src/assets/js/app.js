@@ -123,13 +123,21 @@ document.addEventListener('DOMContentLoaded', function(event) {
   // hero slider
   var heroSwiper = new Swiper('#hero-slider', {
     loop: true,
-    autoHeight: true,
     pagination: {
       el: '#hero-slider-pagination',
       clickable: true
     },
+    lazy: {
+      loadPrevNext: true
+    },
+    effect: 'fade',
+    fadeEffect: {
+      // crossFade: true
+    },
     breakpoints: {
-      1023: {}
+      1199: {
+        autoHeight: true
+      }
     }
   });
 });

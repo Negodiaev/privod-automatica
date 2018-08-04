@@ -1,0 +1,23 @@
+.hero-slider {
+  .swiper-pagination {
+    bottom: rem-calc(25);
+    padding: rem-calc(0 10);
+    line-height: 1;
+    text-align: left;
+  }
+  .swiper-pagination-bullet {
+    width: rem-calc(17);
+    height: rem-calc(17);
+    border: 1px solid #ababab;
+    outline-color: transparent;
+    opacity: 1;
+    background-color: $white;
+    & + .swiper-pagination-bullet {
+      margin-left: rem-calc(13);
+    }
+  }
+  .swiper-pagination-bullet-active {
+    border: 2px solid $white;
+    background-color: $primary-color;
+  }
+}

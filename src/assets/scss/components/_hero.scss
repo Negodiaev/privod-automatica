@@ -1,0 +1,35 @@
+.hero-slide {
+  & > img {
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    max-width: none;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hero-slide-inner {
+  box-sizing: border-box;
+  padding: rem-calc(15 0);
+}
+
+.hero-content {
+  padding: rem-calc(20 10 30);
+  background-color: rgba(#f6fcff, 0.89);
+  p {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+.hero-title {
+  margin-bottom: rem-calc(33);
+  font-size: rem-calc(31);
+  line-height: unitless-calc(43, 31);
+  font-weight: 800;
+  text-transform: uppercase;
+}

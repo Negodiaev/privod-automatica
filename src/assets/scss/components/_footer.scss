@@ -1,0 +1,115 @@
+.footer {
+  color: $white;
+  background-color: #08486c;
+  .menu-col {
+    &.second {
+      padding-bottom: rem-calc(30);
+    }
+  }
+  .logo-col {
+    padding-top: rem-calc(30);
+  }
+  .logo {
+    margin-bottom: rem-calc(20);
+  }
+  .logo-picture {
+    flex: 0 0 rem-calc(60);
+    padding-right: rem-calc(5);
+  }
+  .logo-info,
+  .logo-title {
+    color: #b6e4ff;
+  }
+  .callback {
+    margin-bottom: rem-calc(20);
+  }
+  .callback-title {
+    color: #00d8ff;
+  }
+  .callback-phone,
+  .callback-info {
+    margin-bottom: rem-calc(16);
+  }
+  .callback-phone {
+    a {
+      color: $white;
+    }
+  }
+  .callback-phone-link {
+    font-size: rem-calc(31);
+    font-weight: 300;
+  }
+  .callback-button {
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(11);
+    font-weight: $global-weight-normal;
+    color: #003857;
+    background-color: #ade0fd;
+    box-shadow: 0.7px 0.7px 0 #13384d;
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+}
+
+.scl-menu {
+  margin-bottom: rem-calc(30);
+  padding-left: rem-calc(60);
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: rem-calc(49);
+    height: rem-calc(49);
+    border: 0;
+    border-radius: 50%;
+    color: #83b4d0;
+    background-color: #12618d;
+    &:hover {
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+  &.simple {
+    li {
+      & + li {
+        margin-left: rem-calc(18);
+      }
+    }
+  }
+}
+
+.links {
+  li {
+    & + li {
+      margin-top: rem-calc(14);
+    }
+  }
+  a {
+    display: inline-block;
+    padding: 0;
+    color: #c0e8ff;
+    border-color: #c0e8ff;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.footer-bottom {
+  padding: rem-calc(17 0);
+  font-size: rem-calc(14);
+  line-height: unitless-calc(23, 14);
+  background-color: #083f5f;
+  a {
+    border-color: $white;
+    color: $white;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}

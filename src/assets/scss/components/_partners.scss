@@ -1,0 +1,14 @@
+.partners-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: rem-calc(15);
+  height: rem-calc(140);
+  border: 0;
+  background-color: $white;
+  img {
+    flex: 0 1 auto;
+    width: auto;
+  }
+}

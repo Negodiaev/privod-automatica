@@ -1,0 +1,27 @@
+.services-blocks {
+  .card {
+    line-height: unitless-calc(30, 18);
+    text-align: center;
+    &:hover {
+      border-color: $primary-color;
+      .card-title {
+        border-color: $primary-color;
+        color: $primary-color;
+      }
+    }
+  }
+  .card-picture {
+    padding-bottom: 0;
+  }
+  .card-picture-thumbnail {
+    padding: rem-calc(5);
+    border-bottom: 3px solid #ececec;
+  }
+  .card-info {
+    padding-bottom: rem-calc(20);
+  }
+  .card-title {
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s linear, border-color 0.15s linear;
+  }
+}

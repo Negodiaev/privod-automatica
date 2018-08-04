@@ -1,7 +1,16 @@
 @include breakpoint(small only) {
+  // Base
+  p {
+    margin-bottom: rem-calc(12);
+  }
+  .checked-list {
+    font-size: rem-calc(15);
+  }
   // Home page
-  .logo {
-    margin: rem-calc(0 -10);
+  .head-row {
+    .logo {
+      margin: rem-calc(0 -10);
+    }
   }
   .services-menu {
     &.shown {
@@ -10,12 +19,33 @@
       }
     }
   }
+  .hero-content {
+    font-size: rem-calc(14);
+  }
+  .hero-title {
+    margin-bottom: rem-calc(16);
+    font-size: rem-calc(18);
+  }
+  .advantages-item {
+    font-size: rem-calc(15);
+  }
+  .text-block {
+    font-size: rem-calc(15);
+  }
 }
 
 @include breakpoint(medium down) {
   // Home page
-  .logo-picture {
-    max-width: rem-calc(40);
+  .head-row {
+    .logo {
+      justify-content: center;
+    }
+    .logo-picture {
+      max-width: rem-calc(40);
+    }
+    .logo-title {
+      font-size: rem-calc(16);
+    }
   }
   .services-menu {
     .menu {
@@ -40,6 +70,17 @@
       }
     }
   }
+  .production-picture {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+  .footer {
+    .logo-title {
+      font-size: rem-calc(18);
+    }
+  }
 }
 
 @include breakpoint(medium only) {
@@ -59,7 +100,37 @@
 }
 
 @include breakpoint(medium) {
+  // Base
+  .section-title {
+    font-size: rem-calc(22);
+  }
+  .blocks {
+    & > .cell {
+      margin-bottom: rem-calc(20);
+    }
+  }
   // Home page
+  .hero-content {
+    padding: rem-calc(52 35 77);
+  }
+  .hero-slider {
+    .swiper-pagination {
+      bottom: rem-calc(50);
+      padding: rem-calc(0 35);
+    }
+  }
+  .hero-slide-inner {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+  }
+  .partners-item {
+    height: rem-calc(180);
+  }
+  .footer {
+    .callback-col {
+      padding-top: rem-calc(30);
+    }
+  }
 }
 
 @include breakpoint(large down) {
@@ -78,21 +149,39 @@
 }
 
 @include breakpoint(large) {
+  // Base
+  .section {
+    padding-top: rem-calc(72);
+    padding-bottom: rem-calc(60);
+  }
+  .section-title {
+    margin-bottom: rem-calc(58);
+    font-size: rem-calc(25);
+    line-height: unitless-calc(56, 25);
+  }
+  .checked-list {
+    li {
+      padding-left: rem-calc(80);
+      background-position-x: 28px;
+    }
+  }
   // Home page
-  .callback-address {
-    margin-left: rem-calc(60);
+  .head {
+    .logo {
+      margin-left: rem-calc(-16);
+    }
+    .callback-address {
+      margin-left: rem-calc(60);
+    }
+  }
+  .logo-picture {
+    margin-top: rem-calc(-22);
   }
   .head-row {
     &.middle {
-      padding-top: rem-calc(36);
-      padding-bottom: rem-calc(36);
+      padding-top: rem-calc(34);
+      padding-bottom: rem-calc(38);
     }
-  }
-  .logo-title {
-    font-size: rem-calc(27);
-  }
-  .callback-info {
-    margin-bottom: rem-calc(9);
   }
   .callback-phone {
     margin-bottom: rem-calc(16);
@@ -117,17 +206,54 @@
       }
     }
   }
-}
-
-@include breakpoint(xlarge) {
-  // Home page
-  .logo-picture {
-    padding-right: rem-calc(6);
+  .hero-slider {
+    .swiper-pagination {
+      bottom: rem-calc(90);
+    }
+  }
+  .hero-slide-inner {
+    padding-top: rem-calc(43);
+    padding-bottom: rem-calc(47);
+  }
+  .services-cards {
+    padding-top: rem-calc(85);
+    padding-bottom: rem-calc(70);
+  }
+  .services-blocks {
+    .card {
+      font-size: rem-calc(18);
+    }
+  }
+  .advantages-item {
+    padding: rem-calc(34 25 22 0);
+  }
+  .advantages-item-picture {
+    flex-basis: rem-calc(80);
+  }
+  .production-picture {
+    padding-top: rem-calc(15);
+  }
+  .production-link-button {
+    margin-left: rem-calc(80);
+  }
+  .footer {
+    .copyright {
+      white-space: nowrap;
+    }
   }
 }
 
-@include breakpoint(1200px) {
+@include breakpoint(xlarge) {
+  // Base
+  .blocks {
+    .card-section {
+      padding: rem-calc(22 20);
+    }
+  }
   // Home page
+  .logo-picture {
+    padding-right: rem-calc(5);
+  }
   .services-menu {
     .menu {
       justify-content: space-between;
@@ -135,6 +261,79 @@
         & + li {
           border-left: 1px solid #1186c9;
         }
+      }
+    }
+  }
+  .hero-slide {
+    min-height: rem-calc(585);
+  }
+  .hero-slide-inner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .services-blocks {
+    .card-picture {
+      padding-bottom: rem-calc(5);
+    }
+  }
+  .advantages-item-picture {
+    flex-basis: rem-calc(120);
+  }
+  .goods-blocks {
+    & > .cell {
+      margin-bottom: rem-calc(60);
+    }
+    .card {
+      min-height: rem-calc(252);
+    }
+  }
+  .footer {
+    background-image: linear-gradient(90deg, #08486c 0%, #08486c 50%, #08517b 50%, #08517b 100%);
+    .footer-col {
+      padding-top: rem-calc(45);
+    }
+    .menu-col {
+      &.first {
+        .links {
+          border-right: 1px solid #196088;
+        }
+      }
+      &.second {
+        background-color: #08486c;
+      }
+    }
+    .logo {
+      margin-bottom: rem-calc(50);
+    }
+    .logo-description {
+      min-width: rem-calc(340);
+    }
+    .callback,
+    .author-copyright {
+      padding-left: rem-calc(10);
+    }
+    .callback {
+      margin-bottom: rem-calc(45);
+      &.callback-address {
+        margin-bottom: rem-calc(35);
+      }
+    }
+    .callback-title {
+      margin-bottom: rem-calc(18);
+    }
+    .callback-phone {
+      margin-bottom: rem-calc(26);
+    }
+    .links {
+      padding-top: rem-calc(10);
+    }
+  }
+  .links {
+    li {
+      & + li {
+        margin-top: rem-calc(20);
       }
     }
   }
