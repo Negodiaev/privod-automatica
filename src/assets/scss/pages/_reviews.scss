@@ -1,0 +1,24 @@
+.reviews-item {
+  padding: rem-calc(37 5 31 20);
+  border: 1px solid #e2e2e2;
+  p {
+    margin-bottom: rem-calc(30);
+    font-size: rem-calc(15);
+    line-height: unitless-calc(25, 15);
+    &:last-of-type {
+      margin-bottom: rem-calc(33);
+    }
+  }
+  a {
+    align-self: flex-start;
+    font-size: rem-calc(13);
+  }
+}
+
+.reviews-item-title {
+  margin-bottom: rem-calc(20);
+  font-size: rem-calc(17);
+  line-height: unitless-calc(25, 17);
+  font-weight: $global-weight-bold;
+  color: $primary-color;
+}

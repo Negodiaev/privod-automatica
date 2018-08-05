@@ -83,6 +83,7 @@
 @import 'components/header';
 @import 'components/navigation';
 @import 'components/breadcrumbs';
+@import 'components/sidebar';
 @import 'components/footer';
 
 // sections
@@ -96,6 +97,7 @@
 
 // pages
 @import 'pages/page';
+@import 'pages/reviews';
 
 // media queries
 @import 'global/responsive';

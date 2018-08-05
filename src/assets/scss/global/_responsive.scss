@@ -42,6 +42,19 @@
       }
     }
   }
+  .reviews-item {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(18);
+    p {
+      margin-bottom: rem-calc(16);
+      &:last-of-type {
+        margin-bottom: rem-calc(18);
+      }
+    }
+  }
+  .reviews-item-title {
+    margin-bottom: rem-calc(16);
+  }
 }
 
 @include breakpoint(medium down) {
@@ -187,6 +200,7 @@
       background-position-x: 28px;
     }
   }
+
   // Home page
   .head {
     .logo {
@@ -202,7 +216,7 @@
   .head-row {
     &.middle {
       padding-top: rem-calc(34);
-      padding-bottom: rem-calc(38);
+      padding-bottom: rem-calc(39);
     }
   }
   .callback-phone {
@@ -268,6 +282,15 @@
   .breadcrumbs {
     padding-top: rem-calc(26);
     padding-bottom: rem-calc(19);
+  }
+  .content {
+    padding-bottom: rem-calc(50);
+  }
+  .sidebar {
+    padding-top: rem-calc(25);
+  }
+  .sidebar-nav {
+    margin-bottom: rem-calc(50);
   }
 }
 
