@@ -5,6 +5,7 @@
 - [Home page | Главная](https://negodiaev.github.io/privod-automatica/)
 - [Catalog | Каталог](https://negodiaev.github.io/privod-automatica/catalog.html)
 - [Reviews | Отзывы](https://negodiaev.github.io/privod-automatica/reviews.html)
+- [Category | Раздел](https://negodiaev.github.io/privod-automatica/category.html)
 
 ---
 

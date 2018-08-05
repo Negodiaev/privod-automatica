@@ -461,8 +461,8 @@ $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;
 // 22. Media Object
 // ----------------
-$mediaobject-margin-bottom: $global-margin;
-$mediaobject-section-padding: $global-padding;
+$mediaobject-margin-bottom: rem-calc(20);
+$mediaobject-section-padding: rem-calc(20);
 $mediaobject-image-width-stacked: 100%;
 // 23. Menu
 // --------

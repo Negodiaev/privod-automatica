@@ -1,0 +1,18 @@
+.custom-object {
+  padding: rem-calc(30 20);
+  &.light {
+    background-color: #f8fbfc;
+  }
+}
+
+.custom-object-picture {
+  width: 100%;
+  border: 0;
+}
+
+.custom-object-title {
+  line-height: unitless-calc(29, 20);
+  a {
+    display: inline;
+  }
+}

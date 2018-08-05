@@ -1,0 +1,17 @@
+.products-item {
+  margin-bottom: 0;
+  padding-top: rem-calc(20);
+  padding-bottom: rem-calc(20);
+  height: 100%;
+  border: 1px solid #dedede;
+  font-size: rem-calc(14);
+  line-height: unitless-calc(20, 14);
+  .custom-object-picture {
+    width: rem-calc(60);
+    text-align: center;
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}

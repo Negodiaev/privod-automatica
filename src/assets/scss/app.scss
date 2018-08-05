@@ -94,10 +94,12 @@
 @import 'components/production';
 @import 'components/goods';
 @import 'components/text-block';
+@import 'components/media-objects';
 
 // pages
 @import 'pages/page';
 @import 'pages/reviews';
+@import 'pages/category';
 
 // media queries
 @import 'global/responsive';
