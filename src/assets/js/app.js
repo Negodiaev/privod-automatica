@@ -140,4 +140,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
       }
     }
   });
+
+  // lightbox
+  //Translate - set before any binding
+  WAMediaBox.lang = {
+    prev: 'Назад',
+    next: 'Вперёд',
+    close: 'Закрыть',
+    openInNew: 'Открыть в новом окне'
+  };
+
+  //Bind single element manually
+  // WAMediaBox.bind(document.querySelector('.my-element'));
+
+  //Bind all child elements
+  WAMediaBox.bindAll(document.querySelector('.certificates-gallery'));
+  WAMediaBox.bindAll(document.querySelector('.inner-page-gallery'));
 });

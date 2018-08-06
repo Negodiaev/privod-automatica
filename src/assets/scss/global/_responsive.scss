@@ -350,6 +350,9 @@
   }
   .content {
     padding-bottom: rem-calc(50);
+    img {
+      margin-bottom: rem-calc(55);
+    }
     table {
       margin-bottom: rem-calc(52);
     }
@@ -385,6 +388,12 @@
   }
   .claim {
     margin-top: rem-calc(35);
+  }
+  .certificates-blocks,
+  .photos-blocks {
+    img {
+      margin-bottom: 0;
+    }
   }
   .certificates-blocks {
     padding-top: rem-calc(70);
