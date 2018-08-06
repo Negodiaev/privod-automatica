@@ -1,2 +1,53 @@
-.page {
+.content {
+  img {
+    margin-bottom: rem-calc(20);
+    width: 100%;
+  }
+  ul {
+    font-size: rem-calc(15);
+    line-height: unitless-calc(25, 15);
+  }
+  li {
+    padding-top: rem-calc(4);
+    padding-bottom: rem-calc(4);
+    &:before {
+      content: '\2022';
+      vertical-align: middle;
+      margin-right: rem-calc(5);
+      font-size: rem-calc(32);
+      line-height: 20px;
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
+  table {
+    label {
+      display: block;
+    }
+  }
+  tbody {
+    tr {
+      & + tr {
+        border-top: 1px solid #bfbfbf;
+      }
+    }
+  }
+  th,
+  td {
+    vertical-align: middle;
+    &:last-child {
+      text-align: right;
+    }
+  }
+  th,
+  td:first-child {
+    font-size: rem-calc(15);
+    line-height: unitless-calc(25, 15);
+  }
+  th {
+    padding-top: rem-calc(42);
+    padding-bottom: rem-calc(5);
+    font-weight: $global-weight-normal;
+    color: #a5a5a5;
+  }
 }

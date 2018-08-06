@@ -95,11 +95,13 @@
 @import 'components/goods';
 @import 'components/text-block';
 @import 'components/media-objects';
+@import 'components/forms';
 
 // pages
 @import 'pages/page';
 @import 'pages/reviews';
 @import 'pages/category';
+@import 'pages/inner';
 
 // media queries
 @import 'global/responsive';

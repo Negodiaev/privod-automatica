@@ -1,0 +1,79 @@
+.certificates-blocks,
+.photos-blocks {
+  img {
+    margin-bottom: 0;
+  }
+}
+
+.certificates-blocks {
+  img {
+    width: auto;
+  }
+}
+
+.claim {
+  margin-bottom: rem-calc(20);
+  padding: rem-calc(30 20);
+  text-align: center;
+  background-color: #f8fbfc;
+}
+
+.claim-title,
+.claim-link {
+  font-size: rem-calc(15);
+  line-height: unitless-calc(20, 15);
+}
+
+.claim-title {
+  color: #202020;
+}
+
+.claim-phone {
+  margin-bottom: rem-calc(52);
+  font-size: rem-calc(50);
+  line-height: 1;
+  font-weight: 300;
+  color: #4e5a7e;
+  white-space: nowrap;
+}
+
+.claim-callback-button {
+  margin-bottom: rem-calc(30);
+  padding-top: rem-calc(10);
+  padding-bottom: rem-calc(11);
+  font-size: rem-calc(11);
+  line-height: unitless-calc(20, 11);
+  font-weight: $global-weight-bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.headings-block {
+  padding: rem-calc(10 0);
+}
+
+.media-link {
+  margin-bottom: rem-calc(20);
+  padding-top: rem-calc(22);
+  padding-bottom: rem-calc(22);
+  max-width: rem-calc(300);
+  border: 3px solid $primary-color;
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+    .media-link-title {
+      color: $primary-color;
+    }
+  }
+}
+
+.media-link-title {
+  margin-bottom: rem-calc(8);
+  font-size: rem-calc(17);
+  line-height: unitless-calc(21, 17);
+  color: $body-font-color;
+}
+
+.media-link-subtitle {
+  display: inline-block;
+}

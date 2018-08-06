@@ -3,6 +3,12 @@
   &.light {
     background-color: #f8fbfc;
   }
+  .custom-object-picture {
+    img {
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
 }
 
 .custom-object-picture {

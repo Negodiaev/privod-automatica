@@ -131,18 +131,16 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.25;
-$header-margin-bottom: 1rem;
+$header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
     'h1': (
       'font-size': 20,
-      'mt': rem-calc(12),
-      'mb': rem-calc(20)
+      'mt': rem-calc(12)
     ),
     'h2': (
       'font-size': 21,
-      'mt': rem-calc(10),
-      'mb': rem-calc(20)
+      'mt': rem-calc(10)
     ),
     'h3': (
       'font-size': 18
@@ -183,16 +181,19 @@ $header-styles: (
   large: (
     'h1': (
       'lh': unitless-calc(56, 25),
-      'mb': 50
+      'mb': 30
     ),
     'h2': (
       'mt': 22,
-      'mb': 40
+      'mb': 38
+    ),
+    'h3': (
+      'mb': 22
     )
   )
 );
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 80%;
+$small-font-size: rem-calc(13);
 $header-small-font-color: $medium-gray;
 $paragraph-lineheight: $global-lineheight;
 $paragraph-margin-bottom: rem-calc(26, 16);
@@ -212,9 +213,9 @@ $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
-$list-style-type: disc;
+$list-style-type: none;
 $list-style-position: outside;
-$list-side-margin: 1.25rem;
+$list-side-margin: 0;
 $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
@@ -235,11 +236,11 @@ $abbr-underline: 1px dotted $black;
 // ---------------------
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
-$subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
+$subheader-lineheight: unitless-calc(21, 13);
+$subheader-color: #95a7ae;
 $subheader-font-weight: $global-weight-normal;
-$subheader-margin-top: 0.2rem;
-$subheader-margin-bottom: 0.5rem;
+$subheader-margin-top: 0;
+$subheader-margin-bottom: 0;
 $stat-font-size: 2.5rem;
 // 6. Abide
 // --------
@@ -679,24 +680,24 @@ $switch-paddle-radius: $global-radius;
 $switch-paddle-transition: all 0.25s ease-out;
 // 50. Table
 // ---------
-$table-background: $white;
+$table-background: #f8fbfc;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+$table-border: 0;
+$table-padding: rem-calc(19 10 20);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-is-striped: true;
+$table-is-striped: false;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: #f8fbfc;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
 $table-head-font-color: $body-font-color;
 $table-foot-font-color: $body-font-color;
-$show-header-for-stacked: false;
-$table-stack-breakpoint: medium;
+$show-header-for-stacked: true;
+$table-stack-breakpoint: small;
 // 51. Tabs
 // --------
 $tab-margin: 0;

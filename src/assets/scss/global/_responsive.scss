@@ -33,13 +33,28 @@
     font-size: rem-calc(15);
   }
 
-  // Inner page
+  // Inner pages
   .breadcrumbs {
     li {
       display: none;
       &:first-child,
       &:last-child {
         display: list-item;
+      }
+    }
+  }
+  .content {
+    th,
+    td {
+      padding-top: rem-calc(12);
+      padding-bottom: rem-calc(5);
+      &:last-child {
+        padding-top: rem-calc(20);
+        padding-bottom: rem-calc(30);
+      }
+      &:empty {
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
   }
@@ -61,6 +76,24 @@
   }
   .subcategories-item {
     padding: rem-calc(10);
+  }
+  .certificates-blocks,
+  .photos-blocks {
+    img {
+      margin-bottom: rem-calc(10);
+    }
+  }
+  .claim {
+    a {
+      display: inline;
+    }
+  }
+  .claim-phone {
+    margin-bottom: rem-calc(20);
+    font-size: rem-calc(32);
+  }
+  .media-link {
+    margin-bottom: rem-calc(20);
   }
 }
 
@@ -176,15 +209,27 @@
       padding-bottom: rem-calc(20);
     }
   }
+  .content {
+    th,
+    td {
+      &:last-child {
+        label {
+          float: right;
+        }
+      }
+    }
+  }
   .subcategories-item {
     .custom-object-picture {
       padding-top: rem-calc(10);
     }
   }
-  .products-item {
-    .custom-object-picture {
-      width: rem-calc(110);
-    }
+  .claim {
+    padding-top: rem-calc(92);
+    padding-bottom: rem-calc(42);
+  }
+  .claim-callback-button {
+    margin-bottom: rem-calc(70);
   }
 }
 
@@ -305,6 +350,18 @@
   }
   .content {
     padding-bottom: rem-calc(50);
+    table {
+      margin-bottom: rem-calc(52);
+    }
+    th,
+    td {
+      &:first-child {
+        padding-left: rem-calc(30);
+      }
+      &:last-child {
+        padding-right: rem-calc(30);
+      }
+    }
   }
   .sidebar {
     padding-top: rem-calc(25);
@@ -320,6 +377,31 @@
     .products-blocks {
       padding-top: rem-calc(20);
     }
+  }
+  .products-item {
+    .custom-object-picture {
+      width: rem-calc(90);
+    }
+  }
+  .claim {
+    margin-top: rem-calc(35);
+  }
+  .certificates-blocks {
+    padding-top: rem-calc(70);
+    padding-bottom: rem-calc(85);
+  }
+  .photos-blocks {
+    padding-top: rem-calc(54);
+    padding-bottom: rem-calc(94);
+  }
+  .table-block {
+    padding-top: rem-calc(48);
+  }
+  .headings-block {
+    padding-bottom: rem-calc(56);
+  }
+  .media-link-block {
+    padding-bottom: rem-calc(80);
   }
 }
 
