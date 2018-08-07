@@ -6,6 +6,32 @@
   ul {
     font-size: rem-calc(15);
     line-height: unitless-calc(25, 15);
+    &.secondary {
+      font-size: rem-calc(16);
+      line-height: unitless-calc(22, 16);
+      li {
+        position: relative;
+        margin-top: rem-calc(8);
+        margin-bottom: rem-calc(8);
+        padding: rem-calc(0 0 0 18);
+        &:before {
+          position: absolute;
+          left: 0;
+          top: rem-calc(3);
+          color: $secondary-color;
+        }
+      }
+      a {
+        display: inline;
+        border-color: $body-font-color;
+        color: $body-font-color;
+        &:hover,
+        &:focus {
+          border-color: transparent;
+          color: $primary-color;
+        }
+      }
+    }
   }
   li {
     padding-top: rem-calc(4);

@@ -1,7 +1,12 @@
 @include breakpoint(small only) {
   // Base
-  p {
+  p,
+  ul {
     margin-bottom: rem-calc(12);
+  }
+  .lead {
+    font-size: rem-calc(21);
+    line-height: 1.25;
   }
   .checked-list {
     font-size: rem-calc(15);
@@ -175,6 +180,9 @@
       margin-bottom: rem-calc(20);
     }
   }
+  .form-title {
+    font-size: rem-calc(35);
+  }
   // Home page
   .hero-content {
     padding: rem-calc(52 35 77);
@@ -218,6 +226,13 @@
         }
       }
     }
+  }
+  .form,
+  .form-message {
+    padding: rem-calc(40 30);
+  }
+  .form-message-title {
+    font-size: rem-calc(38);
   }
   .subcategories-item {
     .custom-object-picture {
@@ -353,6 +368,14 @@
     img {
       margin-bottom: rem-calc(55);
     }
+    ul {
+      &.secondary {
+        li {
+          margin-top: rem-calc(14);
+          margin-bottom: rem-calc(14);
+        }
+      }
+    }
     table {
       margin-bottom: rem-calc(52);
     }
@@ -371,6 +394,44 @@
   }
   .sidebar-nav {
     margin-bottom: rem-calc(50);
+  }
+  .content-card {
+    margin-bottom: rem-calc(83);
+  }
+  .form {
+    label {
+      line-height: unitless-calc(48, 14);
+    }
+    input,
+    textarea {
+      padding-left: rem-calc(20);
+      padding-right: rem-calc(20);
+    }
+    input,
+    .select {
+      margin-bottom: rem-calc(40);
+    }
+    textarea {
+      margin-bottom: rem-calc(20);
+    }
+    .checkbox {
+      & + label {
+        margin-bottom: rem-calc(18);
+      }
+    }
+  }
+  .form-title,
+  .form-message-title {
+    margin-bottom: rem-calc(53);
+  }
+  .form-message {
+    padding: rem-calc(100 40);
+  }
+  .form-message-picture {
+    margin-bottom: rem-calc(40);
+  }
+  .form-message-title {
+    font-size: rem-calc(49);
   }
   .category {
     .subcategories {
@@ -411,6 +472,11 @@
   }
   .media-link-block {
     padding-bottom: rem-calc(80);
+  }
+  .form-page {
+    .content {
+      padding-top: rem-calc(33);
+    }
   }
 }
 
@@ -508,6 +574,12 @@
   }
 
   // Inner pages
+  .form {
+    padding: rem-calc(78 70 62);
+  }
+  .form-message {
+    padding: rem-calc(240 80 186);
+  }
   .products-item {
     .custom-object-picture {
       width: rem-calc(160);

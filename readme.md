@@ -8,6 +8,8 @@
 - [Category | Раздел](https://negodiaev.github.io/privod-automatica/category.html)
 - [Inner page | Типовая страница](https://negodiaev.github.io/privod-automatica/inner.html)
 - [Product | Товар](https://negodiaev.github.io/privod-automatica/product.html)
+- [Form | Форма](https://negodiaev.github.io/privod-automatica/form-page.html)
+- [Services | Услуги](https://negodiaev.github.io/privod-automatica/services.html)
 
 ---
 

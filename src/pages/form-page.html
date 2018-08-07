@@ -1,0 +1,96 @@
+---
+layout: page
+meta-title: Форма
+---
+
+<main class="main">
+  <div class="content">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10 large-offset-1">
+          <form>
+            <div class="form content-card">
+              <div class="grid-container">
+                <div class="form-title text-center">Заявка на ремонт</div>
+                <div class="grid-x grid-padding-x">
+                  <div class="cell medium-6 large-4">
+                    <label>Телефон
+                      <input type="text" placeholder="Введите телефон">
+                    </label>
+                  </div>
+                  <!-- /.cell -->
+                  <div class="cell medium-6 large-4">
+                    <label>ФИО
+                      <input type="text" placeholder="Представтесь, пожалуйста">
+                    </label>
+                  </div>
+                  <!-- /.cell -->
+                  <div class="cell medium-6 large-4">
+                    <label>Название организации
+                      <input type="text" placeholder="Введите название">
+                    </label>
+                  </div>
+                  <!-- /.cell -->
+                  <div class="cell medium-6 large-4">
+                    <div class="upload-file-container">
+                      <label>Фото шильды
+                        <input type="text" placeholder="Загрузите фотографию" readonly>
+                      </label>
+                      <label for="upload-file-button" class="upload-file-label">Загрузите фотографию</label>
+                      <input type="file" id="upload-file-button" class="show-for-sr">
+                    </div>
+                  </div>
+                  <!-- /.cell -->
+                  <div class="cell medium-6 large-4">
+                    <label for="city-select">Выберите город</label>
+                    <div class="select">
+                      <select id="city-select">
+                        <option value="Perm">Пермь</option>
+                        <option value="Moscow">Москва</option>
+                        <option value="Saint-Petersburg">Санкт-Петербург</option>
+                      </select>
+                    </div>
+                  
+                  </div>
+                  <!-- /.cell -->
+                  <div class="cell medium-6 large-4">
+                    <label>E-mail
+                      <input type="text" placeholder="Введите e-mail">
+                    </label>
+                  </div>
+                  <!-- /.cell -->
+                </div>
+                <!-- /.grid-x -->
+                <label>Проблема
+                  <textarea placeholder="Опишите вашу проблему"></textarea>
+                </label>
+                <p class="form-row">
+                  <input type="checkbox" name="terms-сheckbox" value="1" id="agree-terms-checkbox" class="checkbox" checked="">
+                  <label for="agree-terms-checkbox">Я соглаcен со всеми условиями</label>
+                </p>
+                <button type="submit" class="submit-button button long">Отправить сообщение</button>
+              </div>
+              <!-- /.grid-container -->
+            </div>
+            <!-- /.feedback-form -->
+          </form>
+          <div class="form-message content-card text-center">
+            <div class="form-message-picture">
+              <svg class="icon" width="98" height="98">
+                <use xlink:href="#circle-check-mark"></use>
+              </svg>
+            </div>
+            <div class="form-message-title">Ваша заявка <br>успешно отправлена</div>
+            <p>В ближайшее время с вами свяжется наш менеджер</p>
+          </div>
+          <!-- /.form-message -->
+        </div>
+        <!-- /.cell -->
+      </div>
+      <!-- /.grid-x -->
+    </div>
+    <!-- /.grid-container -->
+  </div>
+  <!-- /.content -->
+</main>
+<!-- /.main -->
