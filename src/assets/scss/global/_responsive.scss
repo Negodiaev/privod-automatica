@@ -234,6 +234,12 @@
   .form-message-title {
     font-size: rem-calc(38);
   }
+  .application-form {
+    padding-bottom: rem-calc(30);
+    .form-title {
+      font-size: rem-calc(27);
+    }
+  }
   .subcategories-item {
     .custom-object-picture {
       padding-top: rem-calc(10);
@@ -245,6 +251,14 @@
   }
   .claim-callback-button {
     margin-bottom: rem-calc(70);
+  }
+  .services-button {
+    margin-top: rem-calc(20);
+  }
+  .services {
+    .partners-item {
+      height: rem-calc(162);
+    }
   }
 }
 
@@ -433,6 +447,22 @@
   .form-message-title {
     font-size: rem-calc(49);
   }
+  .application-form {
+    margin-bottom: rem-calc(70);
+    .form-title {
+      margin-bottom: rem-calc(92);
+      &:after {
+        bottom: rem-calc(-50);
+      }
+    }
+    input,
+    .select {
+      margin-bottom: rem-calc(35);
+    }
+    textarea {
+      margin-bottom: rem-calc(60);
+    }
+  }
   .category {
     .subcategories {
       padding-top: rem-calc(14);
@@ -477,6 +507,37 @@
     .content {
       padding-top: rem-calc(33);
     }
+  }
+  .services {
+    .advantages {
+      padding-top: 0;
+    }
+    .advantages-item {
+      padding: rem-calc(40 20 27);
+      min-height: rem-calc(235);
+    }
+    .advantages-item-picture {
+      margin-bottom: rem-calc(20);
+    }
+    .services-blocks {
+      .card {
+        font-size: rem-calc(16);
+      }
+    }
+    .partners {
+      padding-top: rem-calc(18);
+      padding-bottom: rem-calc(33);
+      .section-title {
+        margin-bottom: rem-calc(18);
+      }
+    }
+  }
+  .services-button {
+    margin-top: rem-calc(12);
+    margin-bottom: rem-calc(30);
+  }
+  .clients-territory {
+    padding-bottom: rem-calc(25);
   }
 }
 
@@ -580,9 +641,20 @@
   .form-message {
     padding: rem-calc(240 80 186);
   }
+  .application-form {
+    padding: rem-calc(50 40 67);
+  }
   .products-item {
     .custom-object-picture {
       width: rem-calc(160);
+    }
+  }
+  .services {
+    .services-blocks {
+      .card-info {
+        padding-top: rem-calc(38);
+        // padding-bottom: rem-calc(28);
+      }
     }
   }
 }

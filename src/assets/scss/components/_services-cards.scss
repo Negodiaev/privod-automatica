@@ -2,7 +2,8 @@
   .card {
     line-height: unitless-calc(30, 18);
     text-align: center;
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: $primary-color;
       .card-title {
         border-color: $primary-color;

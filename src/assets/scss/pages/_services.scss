@@ -1,0 +1,40 @@
+.services {
+  .advantages {
+    padding-bottom: 0;
+  }
+  .advantages-item {
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: rem-calc(20 20 30);
+    height: 100%;
+  }
+  .advantages-item-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: rem-calc(80);
+    margin-bottom: rem-calc(10);
+  }
+  .services-blocks {
+    .card {
+      line-height: unitless-calc(20, 16);
+      box-shadow: inset 0 0 0 1px #dedede;
+      img {
+        margin-bottom: 0;
+      }
+    }
+    .card-info {
+      padding-top: rem-calc(20);
+      padding-bottom: rem-calc(28);
+    }
+  }
+  .partners-item {
+    border: 1px solid rgba(201, 201, 201, 0.41);
+    img {
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
+}
