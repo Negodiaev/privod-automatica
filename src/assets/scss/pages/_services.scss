@@ -17,24 +17,27 @@
     flex-basis: rem-calc(80);
     margin-bottom: rem-calc(10);
   }
-  .services-blocks {
-    .card {
-      line-height: unitless-calc(20, 16);
-      box-shadow: inset 0 0 0 1px #dedede;
-      img {
-        margin-bottom: 0;
-      }
-    }
-    .card-info {
-      padding-top: rem-calc(20);
-      padding-bottom: rem-calc(28);
-    }
-  }
   .partners-item {
     border: 1px solid rgba(201, 201, 201, 0.41);
     img {
       margin-bottom: 0;
       width: auto;
     }
+  }
+}
+
+.content-services-blocks {
+  .card {
+    margin-left: rem-calc(-4);
+    margin-right: rem-calc(-4);
+    line-height: unitless-calc(20, 16);
+    box-shadow: inset 0 0 0 1px #dedede;
+    img {
+      margin-bottom: 0;
+    }
+  }
+  .card-info {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(28);
   }
 }

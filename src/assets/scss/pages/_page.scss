@@ -76,4 +76,12 @@
     font-weight: $global-weight-normal;
     color: #a5a5a5;
   }
+  .pagination {
+    li {
+      &:not(.current) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
 }

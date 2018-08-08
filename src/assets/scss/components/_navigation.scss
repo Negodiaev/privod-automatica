@@ -132,3 +132,32 @@
     background-color: $anchor-color;
   }
 }
+
+.pagination {
+  li {
+    width: rem-calc(40);
+    text-align: center;
+    line-height: 1;
+    &.pagination-previous,
+    &.pagination-next {
+      width: rem-calc(20);
+      a {
+        padding-top: rem-calc(10);
+        padding-bottom: rem-calc(10);
+        color: #616379;
+        background-color: transparent;
+      }
+    }
+    &:before {
+      display: none;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    //   display: block;
+    border: 0;
+    background-color: whitesmoke;
+  }
+}
