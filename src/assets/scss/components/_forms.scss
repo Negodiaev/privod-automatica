@@ -58,7 +58,14 @@
 }
 
 .feedback-form {
+  padding-top: rem-calc(20);
   background-color: #fcfcfc;
+  .checkbox {
+    & + label {
+      font-size: rem-calc(15);
+      line-height: unitless-calc(32, 15);
+    }
+  }
 }
 
 .select {
@@ -164,7 +171,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1000000;
+  z-index: 10;
   width: 100%;
   height: rem-calc(50);
   font-size: 0;
@@ -175,6 +182,58 @@
   background-repeat: no-repeat;
   background-position: right 17px top 50%;
   background-size: 13px 27px;
+}
+
+.upload-file-link {
+  margin-bottom: rem-calc(10);
+  line-height: 0;
+  .upload-file-label {
+    display: inline-block;
+    position: static;
+    padding: rem-calc(10 0 10 24);
+    width: auto;
+    height: auto;
+    font-size: rem-calc(14);
+    line-height: unitless-calc(15, 14);
+    white-space: nowrap;
+    text-indent: 0;
+    color: $primary-color;
+    background-position: 0 50%;
+    &:hover {
+      .upload-file-text {
+        border-color: transparent;
+      }
+    }
+  }
+  .upload-file-text {
+    border-bottom: 1px solid $primary-color;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  }
+}
+
+.files-to-remove {
+  padding-bottom: rem-calc(20);
+}
+
+.remove-file-link {
+  .close-button {
+    position: static;
+    margin-right: rem-calc(9);
+    padding: rem-calc(10 0);
+    font-size: rem-calc(14);
+    line-height: unitless-calc(15, 14);
+    color: $body-font-color;
+    .icon {
+      vertical-align: middle;
+      color: $secondary-color;
+    }
+  }
+  .file-size {
+    color: $dark-gray;
+  }
+  &:last-of-type {
+    margin-bottom: rem-calc(10);
+  }
 }
 
 .submit-button {

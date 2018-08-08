@@ -1,0 +1,69 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{meta-title}} | Привод Автоматика</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" media="all and (min-width: 960px)">
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+
+<body class="{{page}} {{layout}}">
+
+  <div class="off-canvas-wrapper">
+    <div id="offCanvas" class="side off-canvas position-left text-center" data-off-canvas>
+      <ul class="main-menu vertical menu">
+        <li>
+          <a href="#">О компании</a>
+        </li>
+        <li>
+          <a href="#">Клиенты</a>
+        </li>
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <!-- /.main-menu -->
+      <form class="search-form">
+        <input type="text">
+        <button class="search-form-toggle button" type="button">
+          <svg class="icon" width="14" height="14">
+            <use xlink:href="#magnifier"></use>
+          </svg>
+        </button>
+      </form>
+      <!-- /.search-form -->
+      <div class="callback-address callback">
+        <div class="callback-title">Адрес компании</div>
+        <div class="callback-info">г. Пермь, ул. Ижевская, 25
+          <br>ПН-ПТ с 6:30 до 15:30 МСК</div>
+        <a href="#" class="callback-link">Отправить заявку</a>
+      </div>
+      <!-- /.callback-address -->
+    </div>
+    <!-- /.off-canvas -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="sticky-footer">
+        {{> header}} {{> breadcrumbs}} {{> body}} {{> footer}}
+      </div>
+      <!-- /.sticky-footer -->
+    </div>
+    <!-- /.off-canvas-content -->
+  </div>
+  <!-- /.off-canvas-wrapper -->
+
+  <div class="sprite-container"> {{> sprite}} </div>
+
+  {{> map-init}}
+  <script src="{{root}}assets/js/app.js"></script>
+
+</body>
+
+</html>

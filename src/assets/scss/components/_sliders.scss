@@ -21,3 +21,35 @@
     background-color: $primary-color;
   }
 }
+
+.gallery-slider {
+  .swiper-slide {
+    img {
+      margin-bottom: 0;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    margin-top: 0;
+    padding: rem-calc(11);
+    height: 100%;
+    outline-color: transparent;
+    color: $white;
+    background-color: rgba($black, 0.38);
+    background-image: none;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: rgba($black, 0.3);
+    }
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}

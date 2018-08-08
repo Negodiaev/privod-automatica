@@ -150,10 +150,30 @@ document.addEventListener('DOMContentLoaded', function(event) {
     openInNew: 'Открыть в новом окне'
   };
 
+  // gallery slider
+  var gallerySwiper = new Swiper('#gallery-slider', {
+    loop: true,
+    autoHeight: true,
+    navigation: {
+      nextEl: '.gallery-slider .swiper-button-next',
+      prevEl: '.gallery-slider .swiper-button-prev'
+    },
+    lazy: {
+      loadPrevNext: true
+    },
+    effect: 'fade'
+    // breakpoints: {
+    //   1199: {
+    //     autoHeight: true
+    //   }
+    // }
+  });
+
   //Bind single element manually
   // WAMediaBox.bind(document.querySelector('.my-element'));
 
   //Bind all child elements
   WAMediaBox.bindAll(document.querySelector('.certificates-gallery'));
   WAMediaBox.bindAll(document.querySelector('.inner-page-gallery'));
+  WAMediaBox.bindAll(document.querySelector('.engineers-gallery'));
 });

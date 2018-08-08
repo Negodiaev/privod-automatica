@@ -518,8 +518,8 @@ $orbit-bullet-margin-top: 0.8rem;
 $orbit-bullet-margin-bottom: 0.8rem;
 $orbit-caption-background: rgba($black, 0.5);
 $orbit-caption-padding: 1rem;
-$orbit-control-background-hover: rgba($black, 0.5);
-$orbit-control-padding: 1rem;
+$orbit-control-background-hover: rgba($black, 0.25);
+$orbit-control-padding: rem-calc(11);
 $orbit-control-zindex: 10;
 // 27. Pagination
 // --------------
