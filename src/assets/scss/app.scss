@@ -69,6 +69,7 @@
 @import 'mixins/push-center';
 @import 'mixins/sidelines';
 @import 'mixins/zindex';
+@import 'mixins/placeholder';
 
 // global styles
 // @import 'global/app-dashboard';
@@ -107,6 +108,7 @@
 @import 'pages/services';
 @import 'pages/contacts';
 @import 'pages/about-company';
+@import 'pages/search-page';
 
 // media queries
 @import 'global/responsive';

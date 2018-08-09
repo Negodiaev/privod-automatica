@@ -84,6 +84,8 @@
     position: relative;
     z-index: 2;
     margin-bottom: 0;
+    padding-right: rem-calc(40);
+    min-width: rem-calc(165);
     background-color: transparent;
   }
 }
@@ -266,4 +268,38 @@
   font-size: rem-calc(26);
   line-height: unitless-calc(60, 49);
   font-weight: 300;
+}
+
+.search {
+  margin-bottom: rem-calc(10);
+  input,
+  select,
+  button {
+    font-size: rem-calc(13);
+    line-height: unitless-calc(19, 13);
+  }
+  input,
+  .select {
+    margin-bottom: rem-calc(10);
+  }
+  input,
+  select {
+    border-color: $medium-gray;
+    &:focus {
+      border-color: $black;
+    }
+  }
+  input {
+    @include placeholder {
+      opacity: 1;
+      color: $black;
+    }
+  }
+}
+
+.search-submit-button {
+  margin-bottom: 0;
+  padding-top: rem-calc(16);
+  padding-bottom: rem-calc(15);
+  font-weight: 600;
 }

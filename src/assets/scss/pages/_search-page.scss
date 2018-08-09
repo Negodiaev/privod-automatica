@@ -1,0 +1,34 @@
+.search-results {
+  padding-bottom: rem-calc(10);
+}
+
+.search-result {
+  padding: rem-calc(10 0 20);
+  & + .search-result {
+    border-top: 1px solid #cfcfcf;
+  }
+}
+
+.search-result-title {
+  margin-bottom: rem-calc(10);
+  a {
+    display: inline;
+    font-size: rem-calc(20);
+    line-height: 1.33;
+    font-weight: 600;
+  }
+}
+
+.search-result-category {
+  margin-bottom: rem-calc(20);
+  line-height: unitless-calc(21, 16);
+  a {
+    border-color: $body-font-color;
+    color: $body-font-color;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      color: $primary-color;
+    }
+  }
+}
