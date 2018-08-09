@@ -1,3 +1,10 @@
+.services-cards {
+  &.bordered {
+    padding-top: rem-calc(10);
+    border-top: 1px solid #c4c4c4;
+  }
+}
+
 .services-blocks {
   .card {
     line-height: unitless-calc(30, 18);

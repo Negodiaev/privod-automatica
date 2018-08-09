@@ -12,6 +12,7 @@
 - [Services | Услуги](https://negodiaev.github.io/privod-automatica/services.html)
 - [Projects | Выполненные проекты](https://negodiaev.github.io/privod-automatica/projects.html)
 - [Contacts | Контакты](https://negodiaev.github.io/privod-automatica/contacts.html)
+- [About the company | О компании](https://negodiaev.github.io/privod-automatica/about-company.html)
 
 ---
 

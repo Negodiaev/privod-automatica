@@ -32,6 +32,26 @@
         }
       }
     }
+    &.square-bullets {
+      li {
+        padding-top: rem-calc(5);
+        padding-bottom: rem-calc(5);
+        font-size: rem-calc(16);
+        line-height: unitless-calc(26, 16);
+        &:before {
+          content: '\25a0';
+          vertical-align: baseline;
+          font-size: rem-calc(19);
+        }
+      }
+    }
+    &.checked-list {
+      li {
+        &:before {
+          display: none;
+        }
+      }
+    }
   }
   li {
     padding-top: rem-calc(4);

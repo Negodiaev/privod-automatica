@@ -108,6 +108,15 @@
   .media-link {
     margin-bottom: rem-calc(20);
   }
+  .about-company {
+    .advantages-item {
+      flex-direction: column;
+      padding-left: rem-calc(10);
+    }
+    .advantages-item-picture {
+      margin-bottom: rem-calc(10);
+    }
+  }
 }
 
 @include breakpoint(medium down) {
@@ -271,6 +280,34 @@
   .map {
     height: rem-calc(450);
   }
+  .quality-control {
+    padding: rem-calc(40 35);
+  }
+  .quality-control-title {
+    font-size: rem-calc(37);
+  }
+  .banner {
+    position: relative;
+    margin-top: rem-calc(95);
+    padding: rem-calc(50 200 50 30);
+    img {
+      position: absolute;
+      bottom: 0;
+      right: rem-calc(-5);
+      width: rem-calc(190);
+    }
+  }
+  .banner-info {
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+  .about-company {
+    .advantages-item-picture {
+      flex-basis: rem-calc(100);
+      padding-left: rem-calc(10);
+      padding-right: rem-calc(10);
+    }
+  }
 }
 
 @include breakpoint(large down) {
@@ -359,6 +396,9 @@
   .services-cards {
     padding-top: rem-calc(85);
     padding-bottom: rem-calc(70);
+    &.bordered {
+      padding-top: rem-calc(30);
+    }
   }
   .services-blocks {
     .card {
@@ -398,6 +438,12 @@
         li {
           margin-top: rem-calc(14);
           margin-bottom: rem-calc(14);
+        }
+      }
+      &.square-bullets {
+        li {
+          padding-top: rem-calc(12);
+          padding-bottom: rem-calc(12);
         }
       }
     }
@@ -528,6 +574,7 @@
   .services {
     .advantages {
       padding-top: 0;
+      padding-bottom: rem-calc(49);
     }
     .advantages-item {
       padding: rem-calc(40 20 27);
@@ -601,6 +648,66 @@
     }
     .map {
       margin-top: rem-calc(-63);
+    }
+  }
+  .quality-control {
+    margin-top: 0;
+    padding: rem-calc(78 80 50);
+    margin-bottom: rem-calc(59);
+  }
+  .quality-control-title {
+    margin-bottom: rem-calc(94);
+    &:after {
+      bottom: rem-calc(-50);
+    }
+  }
+  .support {
+    padding-bottom: rem-calc(18);
+    img {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .support-info-title {
+    margin-bottom: rem-calc(20);
+  }
+  .company-strategy {
+    padding-bottom: rem-calc(3);
+  }
+  .company-strategy-title {
+    margin-bottom: rem-calc(10);
+  }
+  .banner {
+    margin-top: rem-calc(100);
+    margin-bottom: rem-calc(27);
+    padding-right: rem-calc(200);
+    img {
+      right: rem-calc(-45);
+      margin-bottom: 0;
+      width: rem-calc(230);
+    }
+  }
+  .banner-title,
+  .banner-info {
+    margin-bottom: rem-calc(35);
+  }
+  .banner-title {
+    font-size: rem-calc(19);
+  }
+  .banner-info {
+    font-size: rem-calc(24);
+  }
+  .about-company {
+    .advantages {
+      padding-bottom: rem-calc(50);
+    }
+    .advantages-item {
+      padding-bottom: rem-calc(33);
+    }
+    .checked-list {
+      li {
+        padding-top: rem-calc(17);
+        padding-bottom: rem-calc(17);
+      }
     }
   }
 }
@@ -720,6 +827,22 @@
     .card-info {
       padding-top: rem-calc(38);
     }
+  }
+  .banner {
+    padding: rem-calc(73 210 20 50);
+    img {
+      width: auto;
+    }
+  }
+  .banner-title,
+  .banner-info {
+    margin-bottom: rem-calc(45);
+  }
+  .banner-title {
+    font-size: rem-calc(22);
+  }
+  .banner-info {
+    font-size: rem-calc(30);
   }
 }
 
