@@ -14,6 +14,7 @@
 - [Contacts | Контакты](https://negodiaev.github.io/privod-automatica/contacts.html)
 - [About the company | О компании](https://negodiaev.github.io/privod-automatica/about-company.html)
 - [Search page | Поиск по сайту](https://negodiaev.github.io/privod-automatica/search-page.html)
+- [Clients | Клиенты](https://negodiaev.github.io/privod-automatica/clients.html)
 
 ---
 

@@ -1,0 +1,25 @@
+.clients-item-wrapper {
+  padding: rem-calc(20 0);
+  border-bottom: 1px solid #dfdfdf;
+  &:first-child {
+    padding-top: rem-calc(10);
+  }
+}
+
+.clients-item {
+  padding: rem-calc(0);
+  .custom-object-title {
+    margin: 0;
+    font-size: rem-calc(20);
+    line-height: 1.25;
+    font-weight: $global-weight-bold;
+    a {
+      border: 0;
+      color: $body-font-color;
+      &:hover,
+      &:focus {
+        color: $body-font-color;
+      }
+    }
+  }
+}

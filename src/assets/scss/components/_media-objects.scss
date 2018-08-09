@@ -22,3 +22,45 @@
     display: inline;
   }
 }
+
+.custom-object-links {
+  margin-bottom: rem-calc(16);
+  li {
+    line-height: 1;
+    &:before {
+      display: none;
+    }
+  }
+  a {
+    display: inline;
+    line-height: unitless-calc(19, 15);
+  }
+}
+
+.custom-object-toggle {
+  display: block;
+  padding: rem-calc(4 20);
+  border: 0;
+  font-size: rem-calc(15);
+  line-height: unitless-calc(27, 15);
+  text-align: center;
+  color: #535353;
+  background-color: $light-gray;
+  &:after {
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMy4zNSAxMy4zNSI+PHRpdGxlPmFuZ2xlLWRvd248L3RpdGxlPjxnIGlkPSI0Yjc4ZTNjOC1kZWU3LTRjZWQtODUxZC0xODRhODU4M2I5MzAiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IjdkZGNlMTY3LWY3NDItNDNiMy04MWI2LTIyZGMyYTZjMDdkMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cG9seWdvbiBwb2ludHM9IjIxLjkxIDAuMzggMTEuODUgMTAuNDQgMS40MSAwIDAgMS40MSAxMC40NCAxMS44NSAxMC4zOCAxMS45MSAxMS44MiAxMy4zNSAyMy4zNSAxLjgyIDIxLjkxIDAuMzgiIHN0eWxlPSJmaWxsOiM5NDk0OTQ7ZmlsbC1ydWxlOmV2ZW5vZGQiLz48L2c+PC9nPjwvc3ZnPg==);
+    display: inline-block;
+    margin-left: rem-calc(20);
+    width: rem-calc(17);
+    height: rem-calc(10);
+  }
+  &:hover,
+  &:focus {
+    color: #535353;
+    background-color: #ececec;
+  }
+}
+
+.custom-object-info {
+  display: none;
+  padding: rem-calc(20 0 10);
+}
