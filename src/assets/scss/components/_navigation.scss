@@ -1,6 +1,6 @@
 .navigation-wrap {
   position: relative;
-  padding-right: rem-calc(85);
+  padding-right: rem-calc(108);
   .search-form {
     justify-content: flex-end;
     position: absolute;
@@ -93,17 +93,19 @@
   .menu {
     background-color: scale-color($primary-color, $lightness: -8%);
     li {
+      flex-grow: 1;
       padding: rem-calc(10);
       font-size: rem-calc(14);
       line-height: unitless-calc(17, 14);
       font-weight: 600;
     }
     a {
-      display: inline-block;
-      border-color: transparent;
+      display: inline;
+      border-color: $white;
       color: $white;
       &:hover {
-        border-color: $white;
+        color: #e3e3e3;
+        border-color: transparent;
       }
     }
     &.simple {
@@ -116,7 +118,7 @@
   }
   &.shown {
     .menu {
-      padding: rem-calc(15 0);
+      padding: rem-calc(14 0);
     }
   }
 }
@@ -156,7 +158,6 @@
     }
   }
   a {
-    //   display: block;
     border: 0;
     background-color: whitesmoke;
   }

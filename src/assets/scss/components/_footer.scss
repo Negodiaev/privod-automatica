@@ -11,12 +11,18 @@
     margin-bottom: rem-calc(20);
   }
   .logo-picture {
-    flex: 0 0 rem-calc(60);
-    padding-right: rem-calc(5);
+    flex: 0 0 rem-calc(62);
+    padding-right: rem-calc(7);
   }
   .logo-title,
   .logo-description {
     color: #b6e4ff;
+  }
+  .logo-title {
+    font-size: rem-calc(23);
+  }
+  .logo-description {
+    font-size: rem-calc(13);
   }
   .callback {
     margin-bottom: rem-calc(20);
