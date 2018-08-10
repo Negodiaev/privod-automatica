@@ -367,6 +367,22 @@
       line-height: unitless-calc(29, 25);
     }
   }
+  .error-page {
+    .content {
+      padding-top: rem-calc(100);
+      padding-bottom: rem-calc(120);
+    }
+  }
+  .error-page-picture {
+    margin-bottom: rem-calc(40);
+  }
+  .error-page-title {
+    margin-bottom: rem-calc(30);
+    font-size: rem-calc(30);
+  }
+  .error-page-info {
+    margin-bottom: rem-calc(96);
+  }
 }
 
 @include breakpoint(large down) {
@@ -806,6 +822,26 @@
   }
   .clients-item {
     padding-bottom: rem-calc(17);
+  }
+  .error-page {
+    .content {
+      padding-top: rem-calc(188);
+      padding-bottom: rem-calc(223);
+    }
+  }
+  .error-page-picture {
+    position: relative;
+    margin-bottom: 0;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: rem-calc(6);
+      border-radius: 50%;
+      background-color: #d9d9d9;
+    }
   }
 }
 

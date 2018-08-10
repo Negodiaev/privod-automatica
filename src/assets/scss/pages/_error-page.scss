@@ -1,0 +1,44 @@
+.error-page {
+  .content {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(10);
+  }
+}
+
+.error-page-picture {
+  margin-bottom: rem-calc(20);
+  svg {
+    max-width: 100%;
+  }
+}
+
+.error-page-message {
+  .search {
+    margin-bottom: 0;
+    input,
+    select,
+    button {
+      font-size: rem-calc(14);
+      line-height: unitless-calc(19, 14);
+    }
+    input {
+      @include placeholder {
+        color: #2c2c2c;
+      }
+    }
+  }
+}
+.error-page-title {
+  margin-bottom: rem-calc(20);
+  font-size: rem-calc(21);
+  line-height: unitless-calc(42, 30);
+  font-weight: $global-weight-normal;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.error-page-info {
+  margin-bottom: rem-calc(30);
+  font-size: rem-calc(15);
+  line-height: unitless-calc(26, 15);
+}
